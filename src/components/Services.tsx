@@ -28,7 +28,7 @@ const Services = () => {
     },
     {
       image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=400&fit=crop",
-      title: "Property Protection",
+      title: "Commercial Waterproofing Services",
       price: "Custom",
       description: "Reliable waterproofing for strata, real estate, property managers, and commercial organizations",
       features: ["Reliable & professional", "Cost-effective solution", "Convenient repair time"],
