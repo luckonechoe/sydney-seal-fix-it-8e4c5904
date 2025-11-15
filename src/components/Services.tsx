@@ -61,15 +61,15 @@ const Services = () => {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className={`overflow-hidden hover:shadow-xl transition-all duration-300 ${
+              className={`overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}
               style={{ 
                 transitionDelay: `${400 + index * 100}ms`
               }}
             >
-              {/* Image */}
-              <div className="h-48 overflow-hidden">
+              {/* Image - Fixed height */}
+              <div className="h-48 overflow-hidden flex-shrink-0">
                 <img 
                   src={service.image} 
                   alt={service.title}
@@ -77,32 +77,33 @@ const Services = () => {
                 />
               </div>
               
-              {/* Card Header with Title and Price Badge */}
-              <CardHeader className="flex flex-row items-start justify-between space-y-0 pb-2">
-                <CardTitle className="text-2xl">{service.title}</CardTitle>
-                <Badge variant="secondary" className="text-lg px-3 py-1">
+              {/* Card Header with Title and Price Badge - Fixed height */}
+              <CardHeader className="flex flex-row items-start justify-between space-y-0 pb-4 pt-6 px-6 flex-shrink-0">
+                <CardTitle className="text-2xl leading-tight">{service.title}</CardTitle>
+                <Badge variant="secondary" className="text-lg px-3 py-1 flex-shrink-0">
                   {service.price}
                 </Badge>
               </CardHeader>
               
-              {/* Card Description */}
-              <CardContent>
-                <CardDescription className="mb-6">
+              {/* Card Content - Grows to fill space */}
+              <CardContent className="flex flex-col flex-1 px-6 pb-6 pt-0">
+                {/* Description - Fixed height with line clamp */}
+                <CardDescription className="mb-6 min-h-[3rem] leading-relaxed">
                   {service.description}
                 </CardDescription>
                 
-                {/* Features list with CheckCircle2 icons */}
-                <ul className="space-y-2 mb-6">
+                {/* Features list - Fixed spacing and alignment */}
+                <ul className="space-y-3 mb-6 flex-1">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
+                    <li key={idx} className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-accent-foreground flex-shrink-0 mt-0.5" />
-                      <span className="text-sm">{feature}</span>
+                      <span className="text-sm leading-relaxed">{feature}</span>
                     </li>
                   ))}
                 </ul>
                 
-                {/* Link to service page */}
-                <Link to={service.link}>
+                {/* Button - Pushed to bottom */}
+                <Link to={service.link} className="mt-auto">
                   <Button className="w-full">
                     Learn More
                     <ArrowRight className="w-4 h-4 ml-2" />
