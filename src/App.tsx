@@ -1,0 +1,49 @@
+
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "./pages/Index";
+import ShowerLeakRepair from "./pages/ShowerLeakRepair";
+import BalconyLeakRepair from "./pages/BalconyLeakRepair";
+import BathroomKitchenRestoration from "./pages/BathroomKitchenRestoration";
+import SilverIonTechnology from "./pages/SilverIonTechnology";
+import NotFound from "./pages/NotFound";
+import CookieConsent from "./components/CookieConsent";
+import { usePageTracking } from "./hooks/useAnalytics";
+
+const queryClient = new QueryClient();
+
+const AppContent = () => {
+  usePageTracking();
+  
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/shower-leak-repair" element={<ShowerLeakRepair />} />
+        <Route path="/balcony-leak-repair" element={<BalconyLeakRepair />} />
+        <Route path="/bathroom-kitchen-restoration" element={<BathroomKitchenRestoration />} />
+        <Route path="/silver-ion-technology" element={<SilverIonTechnology />} />
+        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <CookieConsent />
+    </>
+  );
+};
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <AppContent />
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
+
+export default App;
