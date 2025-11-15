@@ -29,7 +29,6 @@ const Services = () => {
     {
       image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=400&fit=crop",
       title: "Commercial Waterproofing Services",
-      price: "Custom",
       description: "Reliable waterproofing for strata, real estate, property managers, and commercial organizations",
       features: ["Reliable & professional", "Cost-effective solution", "Convenient repair time"],
       link: "/silver-ion-technology"
@@ -80,9 +79,11 @@ const Services = () => {
               {/* Card Header with Title and Price Badge - Fixed height */}
               <CardHeader className="flex flex-row items-start justify-between space-y-0 pb-4 pt-6 px-6 flex-shrink-0">
                 <CardTitle className="text-2xl leading-tight">{service.title}</CardTitle>
-                <Badge variant="secondary" className="text-lg px-3 py-1 flex-shrink-0">
-                  {service.price}
-                </Badge>
+                {service.price && (
+                  <Badge variant="secondary" className="text-lg px-3 py-1 flex-shrink-0">
+                    {service.price}
+                  </Badge>
+                )}
               </CardHeader>
               
               {/* Card Content - Grows to fill space */}
