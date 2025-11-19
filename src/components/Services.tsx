@@ -117,7 +117,7 @@ const Services = () => {
 
         {/* Maintenance program card */}
         <div className="text-center mt-12">
-          <Card className="inline-block bg-accent/10 border-accent/20">
+          <Card className="inline-block bg-accent/10 border-accent/20 max-w-2xl">
             <CardContent className="pt-6">
               <h3 className="text-xl font-semibold mb-2">Annual Maintenance Program</h3>
               <p className="text-muted-foreground mb-4">
@@ -126,9 +126,12 @@ const Services = () => {
               <div className="text-3xl font-bold text-secondary-foreground mb-4">
                 $249/year
               </div>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground mb-4">
                 Includes inspection, cleaning, and touch-up services to maintain warranty coverage
               </p>
+              <Button asChild size="lg" className="mt-2">
+                <a href="/preventative-maintenance">Learn More</a>
+              </Button>
             </CardContent>
           </Card>
         </div>
