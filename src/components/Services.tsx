@@ -13,7 +13,7 @@ const Services = () => {
     {
       image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&h=400&fit=crop",
       title: "Shower Leak Repair",
-      price: "$849",
+      price: "$749",
       description: "Stop water damage with our non-invasive sealing technology. No tiles removed, guaranteed results",
       features: ["No demolition", "Same day service", "Waterproof guarantee"],
       link: "/shower-leak-repair"
