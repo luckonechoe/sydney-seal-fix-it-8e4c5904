@@ -5,14 +5,28 @@ import { Badge } from '@/components/ui/badge';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { ReactNode } from 'react';
 
 const Services = () => {
   const { elementRef, isVisible } = useScrollAnimation();
   
-  const services = [
+  const services: Array<{
+    image: string;
+    title: ReactNode;
+    titleText: string;
+    price?: string;
+    description: string;
+    features: string[];
+    link: string;
+  }> = [
     {
       image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&h=400&fit=crop",
-      title: "Shower Leak Repair",
+      title: (
+        <>
+          Shower Leak<br />Repair
+        </>
+      ),
+      titleText: "Shower Leak Repair",
       price: "$749",
       description: "Stop water damage with our non-invasive sealing technology. No tiles removed, guaranteed results",
       features: ["No demolition", "Same day service", "Waterproof guarantee"],
@@ -21,6 +35,7 @@ const Services = () => {
     {
       image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=400&fit=crop",
       title: "Balcony Leak Repair",
+      titleText: "Balcony Leak Repair",
       price: "From $1649",
       description: "Complete balcony waterproofing solution with advanced leak repair using efflorecense free technology",
       features: ["Weather resistant", "UV protection", "Balcony waterproofing"],
@@ -29,6 +44,7 @@ const Services = () => {
     {
       image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=400&fit=crop",
       title: "Commercial Waterproofing Services",
+      titleText: "Commercial Waterproofing Services",
       description: "Reliable waterproofing for strata, real estate, property managers, and commercial organizations",
       features: ["Reliable & professional", "Cost-effective solution", "Convenient repair time"],
       link: "/commercial-waterproofing"
@@ -71,7 +87,7 @@ const Services = () => {
               <div className="h-48 overflow-hidden flex-shrink-0">
                 <img 
                   src={service.image} 
-                  alt={service.title}
+                  alt={service.titleText}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
