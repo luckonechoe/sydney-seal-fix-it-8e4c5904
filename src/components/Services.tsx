@@ -31,7 +31,7 @@ const Services = () => {
       title: "Commercial Waterproofing Services",
       description: "Reliable waterproofing for strata, real estate, property managers, and commercial organizations",
       features: ["Reliable & professional", "Cost-effective solution", "Convenient repair time"],
-      link: "/silver-ion-technology"
+      link: "/commercial-waterproofing"
     }
   ];
 
