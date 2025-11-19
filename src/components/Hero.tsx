@@ -67,8 +67,8 @@ const Hero = () => {
               <div className="flex items-start space-x-2">
                 <Zap className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold text-blue-900 mb-1 sm:mb-2 text-sm sm:text-base">Advanced Technology</h3>
-                  <p className="text-blue-800 text-sm sm:text-base">Our silver-ion nanoparticle grout & sealant provides permanent antimicrobial protection and mould resistance for the lifetime of your installation.</p>
+                  <h3 className="font-bold text-blue-900 mb-1 sm:mb-2 text-sm sm:text-base">AS3740 Certified Waterproofing</h3>
+                  <p className="text-blue-800 text-sm sm:text-base">All our work meets Australian Standards for waterproofing wet areas in buildings, ensuring code compliance and long-term protection for your property.</p>
                 </div>
               </div>
             </div>
