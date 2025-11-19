@@ -5,6 +5,8 @@ import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import showerBefore from '@/assets/shower-before.jpg';
 import showerAfter from '@/assets/shower-after.jpg';
+import balconyBefore from '@/assets/balcony-before.jpg';
+import balconyAfter from '@/assets/balcony-after.jpg';
 
 const BeforeAfterGallery = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,8 +27,8 @@ const BeforeAfterGallery = () => {
       id: 2,
       title: "Balcony Leak Repair",
       location: "Manly",
-      beforeImage: "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=400&h=300&fit=crop",
-      afterImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=300&fit=crop",
+      beforeImage: balconyBefore,
+      afterImage: balconyAfter,
       description: "Structural waterproofing with lifetime antimicrobial protection",
       testimonial: "Professional service and the results speak for themselves. Highly recommend!",
       customer: "David L."
