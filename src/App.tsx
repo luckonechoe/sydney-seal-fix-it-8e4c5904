@@ -9,6 +9,7 @@ import ShowerLeakRepair from "./pages/ShowerLeakRepair";
 import BalconyLeakRepair from "./pages/BalconyLeakRepair";
 import BathroomKitchenRestoration from "./pages/BathroomKitchenRestoration";
 import SilverIonTechnology from "./pages/SilverIonTechnology";
+import PreventativeMaintenance from "./pages/PreventativeMaintenance";
 import NotFound from "./pages/NotFound";
 import CookieConsent from "./components/CookieConsent";
 import { usePageTracking } from "./hooks/useAnalytics";
@@ -26,6 +27,7 @@ const AppContent = () => {
         <Route path="/balcony-leak-repair" element={<BalconyLeakRepair />} />
         <Route path="/bathroom-kitchen-restoration" element={<BathroomKitchenRestoration />} />
         <Route path="/silver-ion-technology" element={<SilverIonTechnology />} />
+        <Route path="/preventative-maintenance" element={<PreventativeMaintenance />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
