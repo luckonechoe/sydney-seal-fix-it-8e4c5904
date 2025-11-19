@@ -3,6 +3,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import showerBefore from '@/assets/shower-before.jpg';
+import showerAfter from '@/assets/shower-after.jpg';
 
 const BeforeAfterGallery = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -13,8 +15,8 @@ const BeforeAfterGallery = () => {
       id: 1,
       title: "Bathroom Shower Restoration",
       location: "Bondi Beach",
-      beforeImage: "https://images.unsplash.com/photo-1565183928294-d8d4c84a4280?w=400&h=300&fit=crop",
-      afterImage: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&h=300&fit=crop",
+      beforeImage: showerBefore,
+      afterImage: showerAfter,
       description: "Complete waterproofing with silver-ion antimicrobial treatment",
       testimonial: "Amazing transformation! No more leaks and the antimicrobial protection gives us peace of mind.",
       customer: "Sarah M."
