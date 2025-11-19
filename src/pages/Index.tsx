@@ -73,9 +73,9 @@ const Index = () => {
       <Hero />
       <TrustBadges />
       <Services />
-      <PerformanceMetrics />
       <WhyChooseUs />
       <BeforeAfterGallery />
+      <PerformanceMetrics />
       <ServiceAreas />
       <Contact />
       <Footer />
