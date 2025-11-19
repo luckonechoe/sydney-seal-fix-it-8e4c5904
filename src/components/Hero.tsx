@@ -108,6 +108,22 @@ const Hero = () => {
                 <span className="text-foreground text-sm sm:text-base font-medium">Lifetime Protection</span>
               </div>
             </div>
+
+            {/* Trust Statistics */}
+            <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-6 sm:gap-8 mt-8 pt-8 border-t border-primary/20">
+              <div className="text-center">
+                <div className="text-3xl sm:text-4xl font-bold text-primary mb-1">500+</div>
+                <div className="text-sm sm:text-base text-muted-foreground">Happy Customers</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl sm:text-4xl font-bold text-primary mb-1">24hr</div>
+                <div className="text-sm sm:text-base text-muted-foreground">Response Time</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl sm:text-4xl font-bold text-primary mb-1">10yr</div>
+                <div className="text-sm sm:text-base text-muted-foreground">Warranty</div>
+              </div>
+            </div>
           </div>
           
           {/* Contact Form - Mobile First */}
