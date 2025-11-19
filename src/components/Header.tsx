@@ -17,6 +17,18 @@ const Header = () => {
   const handleQuoteClick = () => {
     trackQuote('general', 'normal');
     setIsMenuOpen(false);
+    
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      const headerOffset = 80;
+      const elementPosition = contactSection.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
   };
 
   const toggleMenu = () => {
