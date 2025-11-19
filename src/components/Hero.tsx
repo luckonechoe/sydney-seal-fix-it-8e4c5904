@@ -26,6 +26,20 @@ const Hero = () => {
     setUploadedFiles([]);
   };
 
+  const handleQuoteClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      const headerOffset = 80;
+      const elementPosition = contactSection.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-8 sm:py-12 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6">
@@ -85,7 +99,8 @@ const Hero = () => {
               </Button>
               <Button 
                 variant="outline" 
-                size="lg" 
+                size="lg"
+                onClick={handleQuoteClick}
                 className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 border-2 touch-manipulation min-h-[48px] font-semibold"
               >
                 Get Free Quote
