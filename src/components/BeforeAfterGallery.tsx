@@ -7,6 +7,8 @@ import showerBefore from '@/assets/shower-before.jpg';
 import showerAfter from '@/assets/shower-after.jpg';
 import balconyBefore from '@/assets/balcony-before.jpg';
 import balconyAfter from '@/assets/balcony-after.jpg';
+import kitchenBefore from '@/assets/kitchen-before.jpg';
+import kitchenAfter from '@/assets/kitchen-after.jpg';
 
 const BeforeAfterGallery = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -37,8 +39,8 @@ const BeforeAfterGallery = () => {
       id: 3,
       title: "Kitchen Splashback Restoration",
       location: "North Sydney",
-      beforeImage: "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=300&fit=crop",
-      afterImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
+      beforeImage: kitchenBefore,
+      afterImage: kitchenAfter,
       description: "Grout renewal with stainproof antimicrobial technology",
       testimonial: "The kitchen looks brand new and the grout stays clean much longer now.",
       customer: "Emma R."
