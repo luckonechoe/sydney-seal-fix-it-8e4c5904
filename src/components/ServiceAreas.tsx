@@ -8,7 +8,7 @@ const ServiceAreas = () => {
     "Hills District", "Sutherland Shire", "Western Sydney", "South West Sydney",
     "Parramatta", "Blacktown", "Penrith", "Liverpool", "Bankstown", "Fairfield",
     "Campbelltown", "Narellan", "Hoxton Park", "Sutherland", "Rockdale", "Canterbury",
-    "Randwick", "Ryde", "Willoughby", "Manly", "Hornsby", "North Rocks"
+    "Randwick", "Ryde", "Willoughby", "Manly", "Hornsby", "North Rocks", "Burwood", "Woollahra"
   ];
 
   return (
