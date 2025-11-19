@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from '@/components/ui/card';
-import { Construction, Building2, Wrench, Hammer } from 'lucide-react';
+import { Construction, Shield, Wrench, Hammer } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const WhyChooseUs = () => {
@@ -13,9 +13,9 @@ const WhyChooseUs = () => {
       description: "Decades of expertise in advanced leak repair and restoration across Sydney"
     },
     {
-      icon: <Building2 className="w-8 h-8 text-blue-600" />,
-      title: "Revolutionary Technology",
-      description: "First in Sydney to use silver-ion nanoparticle antimicrobial sealing technology"
+      icon: <Shield className="w-8 h-8 text-blue-600" />,
+      title: "AS3740 Certified",
+      description: "Fully compliant with Australian Standards for waterproofing of wet areas in buildings"
     },
     {
       icon: <Wrench className="w-8 h-8 text-blue-600" />,
