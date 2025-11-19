@@ -2,15 +2,28 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { CheckCircle, Phone, MapPin, Shield, Clock, Award, Zap } from 'lucide-react';
+import { CheckCircle, Phone, MapPin, Shield, Clock, Award, Zap, Upload, X } from 'lucide-react';
 import { useFormTracking } from '../hooks/useAnalytics';
+import { useState } from 'react';
 
 const Hero = () => {
   const { trackForm } = useFormTracking();
+  const [uploadedFiles, setUploadedFiles] = useState<File[]>([]);
+
+  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = Array.from(e.target.files || []);
+    setUploadedFiles(prev => [...prev, ...files]);
+  };
+
+  const removeFile = (index: number) => {
+    setUploadedFiles(prev => prev.filter((_, i) => i !== index));
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     trackForm('hero-contact', { type: 'quote-request' });
+    console.log('Uploaded files:', uploadedFiles);
+    setUploadedFiles([]);
   };
 
   return (
@@ -124,6 +137,52 @@ const Hero = () => {
                   rows={4}
                   className="w-full px-3 py-3 border border-input bg-background rounded-md focus:ring-2 focus:ring-ring focus:border-transparent touch-manipulation text-base resize-none"
                 ></textarea>
+                
+                {/* File Upload Section */}
+                <div className="space-y-3">
+                  <label className="block text-sm font-medium text-card-foreground">
+                    Upload Photos or Videos (Optional)
+                  </label>
+                  <div className="flex items-center justify-center w-full">
+                    <label className="flex flex-col items-center justify-center w-full h-32 border-2 border-input border-dashed rounded-lg cursor-pointer bg-muted/50 hover:bg-muted">
+                      <div className="flex flex-col items-center justify-center pt-5 pb-6">
+                        <Upload className="w-8 h-8 mb-4 text-muted-foreground" />
+                        <p className="mb-2 text-sm text-muted-foreground">
+                          <span className="font-semibold">Click to upload</span> or drag and drop
+                        </p>
+                        <p className="text-xs text-muted-foreground">Photos: PNG, JPG, GIF (MAX. 10MB)</p>
+                        <p className="text-xs text-muted-foreground">Videos: MP4, MOV, AVI (MAX. 50MB)</p>
+                      </div>
+                      <input
+                        type="file"
+                        className="hidden"
+                        multiple
+                        accept="image/*,video/*"
+                        onChange={handleFileUpload}
+                      />
+                    </label>
+                  </div>
+                  
+                  {/* Display uploaded files */}
+                  {uploadedFiles.length > 0 && (
+                    <div className="space-y-2">
+                      <p className="text-sm font-medium text-card-foreground">Uploaded files:</p>
+                      {uploadedFiles.map((file, index) => (
+                        <div key={index} className="flex items-center justify-between p-2 bg-muted rounded-lg">
+                          <span className="text-sm text-card-foreground truncate">{file.name}</span>
+                          <button
+                            type="button"
+                            onClick={() => removeFile(index)}
+                            className="text-destructive hover:text-destructive/80"
+                          >
+                            <X className="w-4 h-4" />
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                
                 <Button 
                   type="submit"
                   className="w-full text-base sm:text-lg py-3 sm:py-4 touch-manipulation min-h-[48px] font-semibold"
