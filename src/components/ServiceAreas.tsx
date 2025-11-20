@@ -26,7 +26,7 @@ const ServiceAreas = () => {
         
         <Card className="bg-white text-gray-900">
           <CardContent className="p-8">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
               {areas.map((area, index) => (
                 <div key={index} className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
