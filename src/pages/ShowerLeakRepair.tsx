@@ -87,10 +87,15 @@ const ShowerLeakRepair = () => {
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
               Your Complete Shower Leak Solution—Fast, Lasting, Guaranteed
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground mb-4">
               Picture your bathroom looking fresh and dry—permanently. No more stress, no more damage, 
               no more costly repairs down the line. Our proven shower waterproofing process stops leaks at the source.
             </p>
+            <div className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-lg shadow-lg">
+              <p className="text-sm uppercase tracking-wide mb-1">Starting From</p>
+              <p className="text-4xl font-bold">$749</p>
+              <p className="text-sm opacity-90 mt-1">Complete shower leak repair</p>
+            </div>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">

@@ -14,7 +14,6 @@ const Services = () => {
     image: string;
     title: ReactNode;
     titleText: string;
-    price?: string;
     description: string;
     features: string[];
     link: string;
@@ -27,7 +26,6 @@ const Services = () => {
         </>
       ),
       titleText: "Shower Leak Repair",
-      price: "$749",
       description: "Stop water damage with our non-invasive sealing technology. No tiles removed, guaranteed results",
       features: ["No demolition", "Same day service", "Waterproof guarantee"],
       link: "/shower-leak-repair"
@@ -36,7 +34,6 @@ const Services = () => {
       image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=400&fit=crop",
       title: "Balcony Leak Repair",
       titleText: "Balcony Leak Repair",
-      price: "From $1649",
       description: "Complete balcony waterproofing solution with advanced leak repair using efflorecense free technology",
       features: ["Weather resistant", "UV protection", "Balcony waterproofing"],
       link: "/balcony-leak-repair"
@@ -92,14 +89,9 @@ const Services = () => {
                 />
               </div>
               
-              {/* Card Header with Title and Price Badge - Fixed height */}
-              <CardHeader className="flex flex-row items-start justify-between space-y-0 pb-4 pt-6 px-6 flex-shrink-0">
+              {/* Card Header with Title */}
+              <CardHeader className="pb-4 pt-6 px-6 flex-shrink-0">
                 <CardTitle className="text-2xl leading-tight">{service.title}</CardTitle>
-                {service.price && (
-                  <Badge variant="secondary" className="text-lg px-3 py-1 flex-shrink-0">
-                    {service.price}
-                  </Badge>
-                )}
               </CardHeader>
               
               {/* Card Content - Grows to fill space */}

@@ -41,25 +41,25 @@ const Header = () => {
         <div className="flex items-center justify-between py-3 sm:py-4">
           {/* Logo Section */}
           <div className="flex items-center space-x-2 flex-shrink-0">
-            <div className="relative w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary via-primary/80 to-primary/60 rounded-xl flex items-center justify-center shadow-lg group overflow-hidden">
+            <div className="relative w-8 h-8 sm:w-10 sm:h-10 bg-gray-900 rounded flex items-center justify-center shadow-lg group overflow-hidden">
               {/* Animated background pulse */}
-              <div className="absolute inset-0 bg-primary/20 rounded-xl animate-pulse"></div>
+              <div className="absolute inset-0 bg-gray-800 rounded animate-pulse"></div>
               
               {/* Rotating border effect */}
-              <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-primary-foreground/20 to-transparent animate-spin [animation-duration:3s] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 rounded bg-gradient-to-r from-transparent via-white/20 to-transparent animate-spin [animation-duration:3s] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
               {/* Logo text with floating animation */}
-              <span className="relative text-primary-foreground font-bold text-sm sm:text-lg animate-bounce [animation-duration:2s] group-hover:scale-110 transition-transform duration-300">
-                S&G
+              <span className="relative text-white font-bold text-sm sm:text-lg animate-bounce [animation-duration:2s] group-hover:scale-110 transition-transform duration-300">
+                SS
               </span>
               
               {/* Floating particles */}
-              <div className="absolute -top-1 -right-1 w-2 h-2 bg-primary-foreground/30 rounded-full animate-ping"></div>
-              <div className="absolute -bottom-1 -left-1 w-1.5 h-1.5 bg-primary-foreground/20 rounded-full animate-pulse [animation-delay:0.5s]"></div>
+              <div className="absolute -top-1 -right-1 w-2 h-2 bg-white/30 rounded-full animate-ping"></div>
+              <div className="absolute -bottom-1 -left-1 w-1.5 h-1.5 bg-white/20 rounded-full animate-pulse [animation-delay:0.5s]"></div>
             </div>
             <div className="hidden sm:block">
               <h1 className="text-lg sm:text-xl font-bold text-foreground hover:text-primary transition-colors duration-300">
-                Sydney Seal & Grout
+                Sydney Sealed
               </h1>
               <p className="text-xs sm:text-sm text-muted-foreground animate-fade-in [animation-delay:0.3s]">
                 Professional Leak Repair
