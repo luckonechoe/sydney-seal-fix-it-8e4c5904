@@ -94,10 +94,15 @@ const BalconyLeakRepair = () => {
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
               Your Balcony Will Be Secured for Years to Come
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground mb-4">
               Our proven strata balcony leak solution process delivers permanent waterproofing protection. 
               Envision gatherings and relaxation on your balcony, rain or shine—it all starts here.
             </p>
+            <div className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-lg shadow-lg">
+              <p className="text-sm uppercase tracking-wide mb-1">Starting From</p>
+              <p className="text-4xl font-bold">$1,649</p>
+              <p className="text-sm opacity-90 mt-1">Complete balcony waterproofing</p>
+            </div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
