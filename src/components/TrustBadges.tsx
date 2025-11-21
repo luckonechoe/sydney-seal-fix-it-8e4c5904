@@ -11,8 +11,8 @@ const TrustBadges = () => {
     },
     {
       icon: Award,
-      title: "Lifetime Antimicrobial Protection",
-      description: "Silver-ion nanoparticle protection",
+      title: "Anti-Mold Protection",
+      description: "Premium epoxy grout prevents mold and stains",
       color: "text-blue-600",
       bg: "bg-blue-50"
     },
