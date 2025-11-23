@@ -1,4 +1,5 @@
 
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button } from '@/components/ui/button';
@@ -8,6 +9,13 @@ import { CheckCircle, Phone, Sparkles, Brush, Wrench, Star } from 'lucide-react'
 const BathroomKitchenRestoration = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Bathroom & Kitchen Restoration Sydney - Tile, Grout & Waterproofing Experts</title>
+        <meta name="description" content="Complete bathroom and kitchen restoration services in Sydney. Tile restoration, antimicrobial grout renewal, waterproofing & mould treatment. Lifetime warranty. Free consultation - call 0412 345 678" />
+        <meta name="keywords" content="bathroom restoration Sydney, kitchen restoration Sydney, tile restoration, grout renewal Sydney, waterproofing Sydney, antimicrobial bathroom treatment, kitchen splashback repair Sydney" />
+        <link rel="canonical" href="https://yourdomain.com/bathroom-kitchen-restoration" />
+      </Helmet>
+      
       <Header />
       
       {/* Hero Section */}

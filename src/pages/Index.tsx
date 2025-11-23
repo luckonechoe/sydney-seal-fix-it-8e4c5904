@@ -1,4 +1,5 @@
 
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import TrustBadges from '../components/TrustBadges';
@@ -69,6 +70,13 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Sydney Sealed - Professional Waterproofing & Leak Repair Sydney</title>
+        <meta name="description" content="Expert waterproofing, shower leak repair, bathroom restoration and antimicrobial grout services across Sydney. 10-year warranty, same-day emergency service. Call 0412 345 678 for free quote." />
+        <meta name="keywords" content="waterproofing Sydney, leak repair Sydney, shower waterproofing, bathroom restoration Sydney, antimicrobial grout Sydney, mould-resistant sealing" />
+        <link rel="canonical" href="https://yourdomain.com/" />
+      </Helmet>
+      
       <Header />
       <Hero />
       <TrustBadges />

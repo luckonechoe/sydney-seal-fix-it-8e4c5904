@@ -1,4 +1,5 @@
 
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button } from '@/components/ui/button';
@@ -9,6 +10,13 @@ import { CheckCircle, Phone, Shield, Calendar, ClipboardCheck, TrendingDown, Hea
 const PreventativeMaintenance = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Preventative Leak Maintenance Sydney - Stop Leaks Before They Start</title>
+        <meta name="description" content="Proactive waterproofing maintenance for Sydney properties. Prevent costly leak damage with regular inspections and antimicrobial treatments. Save up to 70% on repairs. Call 0412 345 678" />
+        <meta name="keywords" content="preventative maintenance Sydney, leak prevention Sydney, waterproofing maintenance, proactive leak repair Sydney, building maintenance Sydney, grout maintenance Sydney" />
+        <link rel="canonical" href="https://yourdomain.com/preventative-maintenance" />
+      </Helmet>
+      
       <Header />
       
       {/* Hero Section */}

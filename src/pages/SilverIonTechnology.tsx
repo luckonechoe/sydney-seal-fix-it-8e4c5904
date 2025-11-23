@@ -1,4 +1,5 @@
 
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
@@ -44,6 +45,13 @@ const SilverIonTechnology = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Antimicrobial Waterproofing Sydney - Advanced Mould-Resistant Protection</title>
+        <meta name="description" content="Revolutionary antimicrobial waterproofing technology for Sydney homes and businesses. Lifetime mould-resistant protection for bathrooms, kitchens & wet areas. 99.9% bacteria elimination. Free quote." />
+        <meta name="keywords" content="antimicrobial waterproofing Sydney, mould-resistant grout Sydney, antibacterial sealing, bathroom antimicrobial protection, kitchen waterproofing Sydney, mould prevention Sydney" />
+        <link rel="canonical" href="https://yourdomain.com/antimicrobial-technology" />
+      </Helmet>
+      
       <Header />
       
       {/* Hero Section */}

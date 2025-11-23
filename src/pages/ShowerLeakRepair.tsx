@@ -1,4 +1,5 @@
 
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button } from '@/components/ui/button';
@@ -8,6 +9,13 @@ import { CheckCircle, Phone, Droplets, Shield, Clock, Award } from 'lucide-react
 const ShowerLeakRepair = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Shower Leak Repair Sydney - Expert Leaking Shower Repairs | Sydney Sealed</title>
+        <meta name="description" content="Stop shower leaks fast! Professional shower leak detection and repair in Sydney. Advanced antimicrobial waterproofing, 10-year warranty. Same-day emergency service available. Call 0412 345 678" />
+        <meta name="keywords" content="shower leak repair Sydney, leaking shower repair, shower waterproofing Sydney, bathroom leak detection, shower grout repair Sydney, antimicrobial waterproofing, emergency shower repairs Sydney" />
+        <link rel="canonical" href="https://yourdomain.com/shower-leak-repair" />
+      </Helmet>
+      
       <Header />
       
       {/* Hero Section */}
