@@ -8,12 +8,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">S&G</span>
+              <div className="w-8 h-8 bg-black rounded flex items-center justify-center">
+                <span className="text-white font-bold">SS</span>
               </div>
               <div>
-                <h3 className="font-bold text-lg">Sydney Seal & Grout</h3>
-                <p className="text-gray-400 text-sm">Advanced Leak Repair & Restoration</p>
+                <h3 className="font-bold text-lg">Sydney Sealed</h3>
+                <p className="text-gray-400 text-sm">Professional Leak Repair</p>
               </div>
             </div>
             <p className="text-gray-400 mb-4">
