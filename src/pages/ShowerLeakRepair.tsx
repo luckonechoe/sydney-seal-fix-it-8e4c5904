@@ -121,8 +121,8 @@ const ShowerLeakRepair = () => {
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-bold text-foreground mb-1">Silver-Ion Waterproofing</h4>
-                    <p className="text-muted-foreground">Revolutionary antimicrobial technology that prevents mould growth while creating an impenetrable water barrier</p>
+                    <h4 className="font-bold text-foreground mb-1">Advanced Antimicrobial Waterproofing</h4>
+                    <p className="text-muted-foreground">Premium mould-resistant technology that prevents bacteria and mould growth while creating an impenetrable water barrier</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -169,7 +169,7 @@ const ShowerLeakRepair = () => {
                   <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-lg font-bold flex-shrink-0">4</div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Health Protection</h4>
-                    <p className="text-sm text-muted-foreground">Silver-ion technology eliminates mould and bacteria—protect your family's health</p>
+                    <p className="text-sm text-muted-foreground">Advanced antimicrobial treatment eliminates mould and bacteria—protect your family's health</p>
                   </div>
                 </div>
               </div>
@@ -297,8 +297,8 @@ const ShowerLeakRepair = () => {
               <Card className="text-center hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <Shield className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h3 className="font-bold text-lg mb-2 text-foreground">Antimicrobial Protection</h3>
-                  <p className="text-muted-foreground text-sm">Silver-ion technology prevents bacteria and mould growth for lasting hygiene</p>
+                  <h3 className="font-bold text-lg mb-2 text-foreground">Mould-Resistant Sealing</h3>
+                  <p className="text-muted-foreground text-sm">Advanced antimicrobial protection prevents bacteria and mould growth for lasting hygiene and durability</p>
                 </CardContent>
               </Card>
               <Card className="text-center hover:shadow-lg transition-shadow">
