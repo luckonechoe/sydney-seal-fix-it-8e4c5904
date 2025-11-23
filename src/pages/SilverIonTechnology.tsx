@@ -55,13 +55,13 @@ const SilverIonTechnology = () => {
               Revolutionary Technology
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Silver-Ion Nanoparticle Technology
+              Advanced Antimicrobial Protection Technology
             </h1>
             <p className="text-xl lg:text-2xl text-muted-foreground mb-8 font-medium">
-              Revolutionary antimicrobial protection that lasts a lifetime
+              Revolutionary mould-resistant protection that lasts a lifetime
             </p>
             <p className="text-lg text-muted-foreground mb-10 max-w-3xl mx-auto">
-              Our advanced silver-ion technology provides permanent protection against bacteria, mould, and harmful microorganisms—
+              Our advanced antimicrobial protection technology provides permanent protection against bacteria, mould, and harmful microorganisms—
               integrated directly into grout and sealant materials for lifelong hygiene and safety.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -82,11 +82,11 @@ const SilverIonTechnology = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              How Silver-Ion Technology Works
+              How Advanced Antimicrobial Technology Works
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our advanced nanoparticle technology integrates silver ions directly into grout and sealant materials, 
-              providing permanent antimicrobial protection
+              Our advanced antimicrobial technology integrates protective agents directly into grout and sealant materials, 
+              providing permanent mould-resistant protection
             </p>
           </div>
 
@@ -96,9 +96,9 @@ const SilverIonTechnology = () => {
                 <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-4xl">🧬</span>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">Nanoparticle Integration</h3>
+                <h3 className="text-xl font-bold text-foreground mb-3">Antimicrobial Integration</h3>
                 <p className="text-muted-foreground">
-                  Silver nanoparticles are permanently embedded into the grout and sealant matrix during manufacturing—
+                  Antimicrobial protection agents are permanently embedded into the grout and sealant matrix during manufacturing—
                   becoming an integral part of the material itself
                 </p>
               </CardContent>
@@ -109,10 +109,10 @@ const SilverIonTechnology = () => {
                 <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-4xl">⚡</span>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">Continuous Release</h3>
+                <h3 className="text-xl font-bold text-foreground mb-3">Continuous Protection</h3>
                 <p className="text-muted-foreground">
-                  Silver ions are released continuously to the surface, eliminating bacteria and microorganisms on contact—
-                  24/7 protection that never stops
+                  Antimicrobial protection is released continuously to the surface, eliminating bacteria and microorganisms on contact—
+                  24/7 mould-resistant protection that never stops
                 </p>
               </CardContent>
             </Card>
@@ -138,10 +138,10 @@ const SilverIonTechnology = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Key Benefits of Silver-Ion Technology
+              Key Benefits of Advanced Antimicrobial Technology
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Why silver-ion nanoparticle technology is the future of antimicrobial protection in waterproofing
+              Why advanced antimicrobial protection technology is the future of mould-resistant waterproofing
             </p>
           </div>
 
@@ -171,10 +171,10 @@ const SilverIonTechnology = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                Where We Use Silver-Ion Technology
+                Where We Use Advanced Antimicrobial Technology
               </h2>
               <p className="text-xl text-muted-foreground">
-                Comprehensive applications across residential and commercial waterproofing projects
+                Comprehensive mould-resistant applications across residential and commercial waterproofing projects
               </p>
             </div>
 
@@ -198,7 +198,7 @@ const SilverIonTechnology = () => {
               Scientifically Proven Results
             </h2>
             <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Independent laboratory testing confirms the effectiveness of our silver-ion technology against a wide range of harmful microorganisms 
+              Independent laboratory testing confirms the effectiveness of our antimicrobial protection technology against a wide range of harmful microorganisms 
               including E. coli, Staphylococcus, and various mould species
             </p>
             
@@ -223,8 +223,8 @@ const SilverIonTechnology = () => {
             <div className="bg-muted/50 p-8 rounded-lg max-w-3xl mx-auto">
               <h3 className="text-xl font-bold text-foreground mb-4">Certified & Tested</h3>
               <p className="text-muted-foreground">
-                Our silver-ion technology has been independently tested and certified by leading Australian laboratories. 
-                All materials meet or exceed Australian Standards for waterproofing and antimicrobial protection.
+                Our antimicrobial protection technology has been independently tested and certified by leading Australian laboratories. 
+                All materials meet or exceed Australian Standards for waterproofing and mould-resistant protection.
               </p>
             </div>
           </div>
@@ -236,7 +236,7 @@ const SilverIonTechnology = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-center text-foreground mb-12">
-              Why Choose Silver-Ion Over Traditional Methods?
+              Why Choose Advanced Antimicrobial Protection Over Traditional Methods?
             </h2>
             
             <div className="grid md:grid-cols-2 gap-8">
@@ -246,7 +246,7 @@ const SilverIonTechnology = () => {
                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
                       <CheckCircle className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold text-foreground">Silver-Ion Technology</h3>
+                    <h3 className="text-xl font-bold text-foreground">Advanced Antimicrobial Protection</h3>
                   </div>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start">
@@ -318,8 +318,8 @@ const SilverIonTechnology = () => {
               Experience the Future of Antimicrobial Protection
             </h2>
             <p className="text-xl opacity-90 mb-8">
-              Get a free quote for your silver-ion nanoparticle waterproofing project. 
-              Lifetime protection for your home or commercial property starts here.
+              Get a free quote for your advanced antimicrobial waterproofing project. 
+              Lifetime mould-resistant protection for your home or commercial property starts here.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
