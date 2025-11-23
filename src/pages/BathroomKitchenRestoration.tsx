@@ -18,8 +18,8 @@ const BathroomKitchenRestoration = () => {
               Bathroom & Kitchen Restoration
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Transform your spaces with our premium restoration services featuring revolutionary 
-              silver-ion nanoparticle technology for lasting beauty and hygiene protection.
+              Transform your spaces with our premium restoration services featuring advanced 
+              antimicrobial protection technology for lasting beauty and hygiene protection.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
@@ -44,7 +44,7 @@ const BathroomKitchenRestoration = () => {
               </h2>
               <p className="text-gray-600 mb-6">
                 Revitalize your bathroom with our comprehensive restoration services. From tile 
-                and grout renewal to complete waterproofing, we use advanced silver-ion technology 
+                and grout renewal to complete waterproofing, we use advanced antimicrobial protection technology 
                 for superior hygiene and lasting results.
               </p>
               <div className="grid grid-cols-2 gap-4">
@@ -79,7 +79,7 @@ const BathroomKitchenRestoration = () => {
               </div>
             </div>
             <div className="bg-purple-50 p-8 rounded-lg">
-              <h3 className="text-xl font-bold text-purple-900 mb-4">🔬 Silver-Ion Technology Benefits</h3>
+              <h3 className="text-xl font-bold text-purple-900 mb-4">🔬 Advanced Antimicrobial Benefits</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <Sparkles className="w-5 h-5 text-purple-600 mt-1" />
@@ -125,7 +125,7 @@ const BathroomKitchenRestoration = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
-                  <span>Silver-ion grout and sealant application</span>
+                  <span>Antimicrobial grout and sealant application</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
@@ -183,7 +183,7 @@ const BathroomKitchenRestoration = () => {
               <CardContent className="p-6">
                 <Sparkles className="w-12 h-12 text-purple-600 mx-auto mb-4" />
                 <h3 className="font-bold text-lg mb-2">Premium Materials</h3>
-                <p className="text-gray-600">Silver-ion enhanced products only</p>
+                <p className="text-gray-600">Antimicrobial-enhanced products only</p>
               </CardContent>
             </Card>
             <Card className="text-center">
