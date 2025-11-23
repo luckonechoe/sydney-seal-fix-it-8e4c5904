@@ -1,4 +1,5 @@
 
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -9,6 +10,13 @@ import { CheckCircle, Phone, Building2, Shield, FileCheck, Clock } from 'lucide-
 const CommercialWaterproofing = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Commercial Waterproofing Sydney - Strata & Property Management Services</title>
+        <meta name="description" content="Expert commercial waterproofing for Sydney strata and property managers. Multi-unit buildings, shopping centers, offices. Lifetime warranty, minimal disruption. Free quote - call 0412 345 678" />
+        <meta name="keywords" content="commercial waterproofing Sydney, strata waterproofing Sydney, property management waterproofing, multi-unit building repairs Sydney, commercial leak repair Sydney, building maintenance Sydney" />
+        <link rel="canonical" href="https://yourdomain.com/commercial-waterproofing" />
+      </Helmet>
+      
       <Header />
       
       {/* Hero Section */}

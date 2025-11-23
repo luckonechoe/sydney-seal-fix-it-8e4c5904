@@ -1,4 +1,5 @@
 
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button } from '@/components/ui/button';
@@ -8,6 +9,13 @@ import { CheckCircle, Phone, Home, Umbrella, AlertTriangle, Zap } from 'lucide-r
 const BalconyLeakRepair = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Balcony Leak Repair Sydney - Expert Balcony Waterproofing & Restoration</title>
+        <meta name="description" content="Stop balcony leaks permanently! Professional balcony waterproofing and leak repair across Sydney. Advanced detection, lifetime warranty, same-day service. Call 0412 345 678 for free assessment." />
+        <meta name="keywords" content="balcony leak repair Sydney, balcony waterproofing Sydney, balcony restoration, deck waterproofing Sydney, outdoor leak repair, balcony membrane repair Sydney" />
+        <link rel="canonical" href="https://yourdomain.com/balcony-leak-repair" />
+      </Helmet>
+      
       <Header />
       
       {/* Hero Section */}
