@@ -11,7 +11,7 @@ const TrustBadges = () => {
     },
     {
       icon: Award,
-      title: "Advanced Antimicrobial Protection",
+      title: "Antimicrobial Protection",
       description: "Nanoparticle technology prevents mould & bacteria",
       color: "text-blue-600",
       bg: "bg-blue-50"
