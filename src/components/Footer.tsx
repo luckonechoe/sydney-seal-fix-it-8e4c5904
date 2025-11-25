@@ -17,8 +17,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-400 mb-4">
-              Professional leak repair specialists serving Sydney with advanced 
-              antimicrobial nanoparticle solutions for lasting protection.
+              Sydney's trusted experts in leak repair, waterproofing and restoration. 
+              Professional bathroom and balcony solutions with lifetime warranty.
             </p>
             <div className="flex items-center space-x-2 text-gray-400">
               <span>ABN: 12 345 678 901</span>
