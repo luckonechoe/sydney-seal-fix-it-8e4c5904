@@ -36,7 +36,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-gray-900 shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between py-3 sm:py-4">
           {/* Logo Section */}
@@ -47,10 +47,10 @@ const Header = () => {
               </span>
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-lg sm:text-xl font-bold text-foreground hover:text-primary transition-colors duration-300">
+              <h1 className="text-lg sm:text-xl font-bold text-white hover:text-primary transition-colors duration-300">
                 Sydney Sealed
               </h1>
-              <p className="text-xs sm:text-sm text-muted-foreground animate-fade-in [animation-delay:0.3s]">
+              <p className="text-xs sm:text-sm text-gray-400 animate-fade-in [animation-delay:0.3s]">
                 Professional Leak Repair
               </p>
             </div>
@@ -60,7 +60,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-6">
             <button 
               onClick={handlePhoneClick}
-              className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors touch-manipulation"
+              className="flex items-center space-x-2 text-gray-400 hover:text-primary transition-colors touch-manipulation"
             >
               <Phone className="w-4 h-4" />
               <span className="font-semibold">0412 345 678</span>
@@ -94,7 +94,7 @@ const Header = () => {
         
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden border-t border-border">
+          <div className="lg:hidden border-t border-gray-800">
             <div className="py-4 space-y-3">
               <Button 
                 onClick={handleQuoteClick} 
@@ -105,7 +105,7 @@ const Header = () => {
               </Button>
               <div className="flex items-center justify-center space-x-2 py-2">
                 <Phone className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-foreground">24/7 Emergency Service</span>
+                <span className="text-sm font-medium text-white">24/7 Emergency Service</span>
               </div>
             </div>
           </div>
