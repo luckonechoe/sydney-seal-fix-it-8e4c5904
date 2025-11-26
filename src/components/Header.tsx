@@ -41,7 +41,7 @@ const Header = () => {
         <div className="flex items-center justify-between py-3 sm:py-4">
           {/* Logo Section */}
           <div className="flex items-center space-x-2 flex-shrink-0">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gray-900 rounded flex items-center justify-center">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-black rounded flex items-center justify-center">
               <span className="text-white font-bold text-sm sm:text-lg">
                 SS
               </span>
