@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import ShowerLeakRepair from "./pages/ShowerLeakRepair";
 import ShowerReTile from "./pages/ShowerReTile";
 import BalconyLeakRepair from "./pages/BalconyLeakRepair";
+import BalconyReTile from "./pages/BalconyReTile";
 import BathroomKitchenRestoration from "./pages/BathroomKitchenRestoration";
 import SilverIonTechnology from "./pages/SilverIonTechnology";
 import PreventativeMaintenance from "./pages/PreventativeMaintenance";
@@ -28,6 +29,7 @@ const AppContent = () => {
         <Route path="/shower-leak-repair" element={<ShowerLeakRepair />} />
         <Route path="/shower-re-tile" element={<ShowerReTile />} />
         <Route path="/balcony-leak-repair" element={<BalconyLeakRepair />} />
+        <Route path="/balcony-re-tile" element={<BalconyReTile />} />
         <Route path="/bathroom-kitchen-restoration" element={<BathroomKitchenRestoration />} />
         <Route path="/silver-ion-technology" element={<SilverIonTechnology />} />
         <Route path="/preventative-maintenance" element={<PreventativeMaintenance />} />
