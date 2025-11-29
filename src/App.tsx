@@ -13,6 +13,7 @@ import BathroomKitchenRestoration from "./pages/BathroomKitchenRestoration";
 import SilverIonTechnology from "./pages/SilverIonTechnology";
 import PreventativeMaintenance from "./pages/PreventativeMaintenance";
 import CommercialWaterproofing from "./pages/CommercialWaterproofing";
+import CompleteReconstruction from "./pages/CompleteReconstruction";
 import NotFound from "./pages/NotFound";
 import CookieConsent from "./components/CookieConsent";
 import { usePageTracking } from "./hooks/useAnalytics";
@@ -34,6 +35,7 @@ const AppContent = () => {
         <Route path="/silver-ion-technology" element={<SilverIonTechnology />} />
         <Route path="/preventative-maintenance" element={<PreventativeMaintenance />} />
         <Route path="/commercial-waterproofing" element={<CommercialWaterproofing />} />
+        <Route path="/complete-reconstruction" element={<CompleteReconstruction />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
