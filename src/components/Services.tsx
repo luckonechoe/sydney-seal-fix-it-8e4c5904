@@ -76,11 +76,11 @@ const Services = () => {
     },
     {
       image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&h=400&fit=crop",
-      title: "Rapid Leak Repair",
-      titleText: "Rapid Leak Repair",
-      description: "Emergency leak detection and repair service for urgent water damage situations",
-      features: ["Same day response", "Quick diagnosis", "Immediate repair"],
-      link: "/rapid-leak-repair"
+      title: "Complete Reconstruction",
+      titleText: "Complete Reconstruction",
+      description: "Full tile reconstruction with double-layer waterproofing for severe leak situations requiring substrate-level repairs",
+      features: ["Double-layer protection", "Full substrate rebuild", "Premium epoxy grout"],
+      link: "/complete-reconstruction"
     }
   ];
 
