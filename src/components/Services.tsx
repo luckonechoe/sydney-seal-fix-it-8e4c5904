@@ -32,7 +32,11 @@ const Services = () => {
     },
     {
       image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=400&fit=crop",
-      title: "Balcony Leak Repair",
+      title: (
+        <>
+          Balcony Leak<br />Repair
+        </>
+      ),
       titleText: "Balcony Leak Repair",
       description: "Complete balcony waterproofing solution with advanced leak repair using efflorecense free technology",
       features: ["Weather resistant", "UV protection", "Balcony waterproofing"],
