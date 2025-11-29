@@ -48,16 +48,24 @@ const Services = () => {
     },
     {
       image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&h=400&fit=crop",
-      title: "Shower Re-Tile",
-      titleText: "Shower Re-Tile",
+      title: (
+        <>
+          Full Shower Waterproofing<br />& Re-Tile
+        </>
+      ),
+      titleText: "Full Shower Waterproofing & Re-Tile",
       description: "Complete shower reconstruction with full rip-out and re-tiling for permanent leak resolution",
       features: ["Full reconstruction", "Compliant waterproofing", "Epoxy grout finish"],
       link: "/shower-re-tile"
     },
     {
       image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=400&fit=crop",
-      title: "Balcony Re-Tile",
-      titleText: "Balcony Re-Tile",
+      title: (
+        <>
+          Full Balcony Waterproofing<br />& Re-Tile
+        </>
+      ),
+      titleText: "Full Balcony Waterproofing & Re-Tile",
       description: "Complete balcony reconstruction with new waterproofing membrane and premium tiling",
       features: ["Full demolition", "New membrane system", "Premium tile finish"],
       link: "/balcony-re-tile"
