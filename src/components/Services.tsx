@@ -45,6 +45,30 @@ const Services = () => {
       description: "Reliable waterproofing for strata, real estate, property managers, and commercial organizations",
       features: ["Reliable & professional", "Cost-effective solution", "Convenient repair time"],
       link: "/commercial-waterproofing"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&h=400&fit=crop",
+      title: "Shower Re-Tile",
+      titleText: "Shower Re-Tile",
+      description: "Complete shower reconstruction with full rip-out and re-tiling for permanent leak resolution",
+      features: ["Full reconstruction", "Compliant waterproofing", "Epoxy grout finish"],
+      link: "/shower-re-tile"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=400&fit=crop",
+      title: "Balcony Re-Tile",
+      titleText: "Balcony Re-Tile",
+      description: "Complete balcony reconstruction with new waterproofing membrane and premium tiling",
+      features: ["Full demolition", "New membrane system", "Premium tile finish"],
+      link: "/balcony-re-tile"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&h=400&fit=crop",
+      title: "Rapid Leak Repair",
+      titleText: "Rapid Leak Repair",
+      description: "Emergency leak detection and repair service for urgent water damage situations",
+      features: ["Same day response", "Quick diagnosis", "Immediate repair"],
+      link: "/rapid-leak-repair"
     }
   ];
 
