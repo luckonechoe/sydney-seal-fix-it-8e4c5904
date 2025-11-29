@@ -6,6 +6,9 @@ import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { ReactNode } from 'react';
+import showerRetileProcess from '@/assets/shower-retile-process.jpg';
+import balconyRetileProcess from '@/assets/balcony-retile-process.jpg';
+import completeReconstructionDamage from '@/assets/complete-reconstruction-damage.jpg';
 
 const Services = () => {
   const { elementRef, isVisible } = useScrollAnimation();
@@ -51,7 +54,7 @@ const Services = () => {
       link: "/commercial-waterproofing"
     },
     {
-      image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&h=400&fit=crop",
+      image: showerRetileProcess,
       title: (
         <>
           Full Shower Waterproofing<br />& Re-Tile
@@ -63,7 +66,7 @@ const Services = () => {
       link: "/shower-re-tile"
     },
     {
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=400&fit=crop",
+      image: balconyRetileProcess,
       title: (
         <>
           Full Balcony Waterproofing<br />& Re-Tile
@@ -75,7 +78,7 @@ const Services = () => {
       link: "/balcony-re-tile"
     },
     {
-      image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&h=400&fit=crop",
+      image: completeReconstructionDamage,
       title: "Complete Reconstruction",
       titleText: "Complete Reconstruction",
       description: "Full tile reconstruction with double-layer waterproofing for severe leak situations requiring substrate-level repairs",
