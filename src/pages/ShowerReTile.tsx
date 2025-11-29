@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { CheckCircle, Phone, Shield, Clock, Award, Hammer, Wrench, Layers, Droplets } from 'lucide-react';
+import { CheckCircle, Phone, Shield, Clock, Award, Hammer, Wrench, Layers, Droplets, AlertTriangle } from 'lucide-react';
 
 const ShowerReTile = () => {
   return (
@@ -26,11 +26,7 @@ const ShowerReTile = () => {
               Stop Your Leaking Shower – Permanently.
             </h1>
             <p className="text-xl lg:text-2xl text-muted-foreground mb-8 font-medium">
-              The Definitive Solution for Failed Waterproofing Membranes
-            </p>
-            <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-              When non-invasive repairs are no longer viable, our full rip-out and reconstruction service 
-              guarantees a watertight, long-lasting result. Complete in just 2 days—ready to use on Day 3.
+              The definitive solution for failed waterproofing membranes and chronic shower leaks, involving a full rip-out and reconstruction to guarantee a watertight, long-lasting result.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-6">
@@ -38,14 +34,14 @@ const ShowerReTile = () => {
                 Call 0412 345 678 Now
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-                Book Comprehensive Shower Assessment
+                Book Your Comprehensive Shower Assessment
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Pain Points Section */}
+      {/* Warning Signs Section - Attention/Interest */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -61,7 +57,14 @@ const ShowerReTile = () => {
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl mb-3">💧</div>
                   <h3 className="font-bold mb-2 text-foreground">Damp Walls</h3>
-                  <p className="text-sm text-muted-foreground">Swollen, stained walls near the shower recess or peeling paint in adjoining rooms</p>
+                  <p className="text-sm text-muted-foreground">Damp, swollen, or stained walls near the shower recess</p>
+                </CardContent>
+              </Card>
+              <Card className="border-destructive/20">
+                <CardContent className="p-6 text-center">
+                  <div className="text-4xl mb-3">🎨</div>
+                  <h3 className="font-bold mb-2 text-foreground">Peeling Paint</h3>
+                  <p className="text-sm text-muted-foreground">Peeling paint or bubbling plaster in the bathroom or adjoining room</p>
                 </CardContent>
               </Card>
               <Card className="border-destructive/20">
@@ -71,39 +74,120 @@ const ShowerReTile = () => {
                   <p className="text-sm text-muted-foreground">Loose, hollow-sounding, or cracked tiles on the floor or lower walls</p>
                 </CardContent>
               </Card>
-              <Card className="border-destructive/20">
-                <CardContent className="p-6 text-center">
-                  <div className="text-4xl mb-3">🦠</div>
-                  <h3 className="font-bold mb-2 text-foreground">Persistent Odours</h3>
-                  <p className="text-sm text-muted-foreground">Musty smell that cleaning cannot eliminate, or crumbling grout that returns after patching</p>
-                </CardContent>
-              </Card>
             </div>
 
-            <div className="bg-muted/50 p-8 rounded-lg text-center border-l-4 border-primary">
-              <p className="text-lg text-foreground mb-4 italic">
-                "When water breaches the membrane, the damage is structural, not just cosmetic. 
-                Timber rot, toxic mould growth, and compromised substrate mean the longer you wait, 
-                the more extensive—and expensive—the repair becomes."
-              </p>
-              <p className="text-muted-foreground">
-                Don't risk insurance complications or property devaluation. Get a permanent solution today.
-              </p>
+            <div className="bg-muted/50 p-8 rounded-lg">
+              <h3 className="font-bold text-lg text-foreground mb-4">Additional Warning Signs:</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start space-x-3">
+                  <AlertTriangle className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+                  <span className="text-muted-foreground">Persistent musty smell that cleaning cannot eliminate</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <AlertTriangle className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+                  <span className="text-muted-foreground">Brown stains or drips on the ceiling directly below the bathroom</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <AlertTriangle className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+                  <span className="text-muted-foreground">Extensive missing or crumbling grout that returns quickly after patching</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Process and Value Section */}
+      {/* Consequences Section - Desire */}
       <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-center text-foreground mb-6">
+              Why a Leaking Shower Isn't 'Just a Little Damp'
+            </h2>
+            <p className="text-center text-lg text-muted-foreground mb-10">
+              When water breaches the membrane, the damage is structural, not just cosmetic. Ignoring it leads to:
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="border-destructive/30">
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-destructive/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <AlertTriangle className="w-6 h-6 text-destructive" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-foreground mb-2">Timber Rot and Structural Damage</h3>
+                      <p className="text-sm text-muted-foreground">Water saturates the wall framing and floor joists, leading to costly and complex structural repairs.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="border-destructive/30">
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-destructive/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <AlertTriangle className="w-6 h-6 text-destructive" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-foreground mb-2">Mould and Health Risks</h3>
+                      <p className="text-sm text-muted-foreground">Hidden moisture feeds toxic mould growth within the wall cavity, compromising indoor air quality.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="border-destructive/30">
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-destructive/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <AlertTriangle className="w-6 h-6 text-destructive" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-foreground mb-2">Compromised Substrate</h3>
+                      <p className="text-sm text-muted-foreground">The screed and bedding become saturated, losing integrity and causing tiles to lift and crack.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="border-destructive/30">
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-destructive/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <AlertTriangle className="w-6 h-6 text-destructive" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-foreground mb-2">Expensive Rectification</h3>
+                      <p className="text-sm text-muted-foreground">The longer the leak is left, the more extensive the demolition and repair work becomes.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="border-destructive/30 md:col-span-2">
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-destructive/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <AlertTriangle className="w-6 h-6 text-destructive" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-foreground mb-2">Insurance and Resale Issues</h3>
+                      <p className="text-sm text-muted-foreground">Undisclosed water damage can complicate insurance claims and significantly devalue your property.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section - Interest/Trust */}
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
               The Permanent Shower Re-Tile (Rip-Up) System
             </h2>
             <p className="text-lg text-muted-foreground mb-4">
-              Our full-scale, permanent re-tiling process is designed for quality and compliance. 
-              Complete in 2 days with a 24-hour cure period—your shower is ready on Day 3.
+              When non-invasive repairs are no longer viable, we implement our full-scale, permanent re-tiling process. This is a 2-day job designed for quality and compliance.
             </p>
             <div className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-lg shadow-lg">
               <p className="text-sm uppercase tracking-wide mb-1">Completed In</p>
@@ -122,42 +206,42 @@ const ShowerReTile = () => {
                   <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-lg font-bold flex-shrink-0">1</div>
                   <div>
                     <h4 className="font-bold text-foreground mb-1">Controlled Demolition</h4>
-                    <p className="text-muted-foreground">Removal of all floor tiles, screed, and first bottom row of wall tiles to expose the structural substrate</p>
+                    <p className="text-muted-foreground">Minor demolition work on the shower base, including the removal of all floor tiles, screed, and the first bottom row of wall tiles to expose the structural substrate.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-lg font-bold flex-shrink-0">2</div>
                   <div>
-                    <h4 className="font-bold text-foreground mb-1">Substrate Preparation</h4>
-                    <p className="text-muted-foreground">Thorough cleaning, drying, and repair of the substrate to ensure a sound foundation</p>
+                    <h4 className="font-bold text-foreground mb-1">Substrate Preparation & Cleaning</h4>
+                    <p className="text-muted-foreground">The area is thoroughly cleaned, dried, and prepared. Any necessary repairs to the substrate are completed to ensure a sound foundation.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-lg font-bold flex-shrink-0">3</div>
                   <div>
                     <h4 className="font-bold text-foreground mb-1">Compliant Waterproofing</h4>
-                    <p className="text-muted-foreground">Two-part membrane with bond breakers and reinforcing fabric, extending up walls and into waste penetration</p>
+                    <p className="text-muted-foreground">Application of a high-performance, compliant two-part waterproofing membrane, including bond breakers and reinforcing fabric, extending up the walls and into the waste penetration.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-lg font-bold flex-shrink-0">4</div>
                   <div>
                     <h4 className="font-bold text-foreground mb-1">New Screed & Falls</h4>
-                    <p className="text-muted-foreground">Sand cement screed precisely leveled to ensure correct falls toward drain, eliminating pooling</p>
+                    <p className="text-muted-foreground">A new sand cement screed is laid and precisely leveled to ensure correct falls towards the drain, eliminating water pooling.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-lg font-bold flex-shrink-0">5</div>
                   <div>
                     <h4 className="font-bold text-foreground mb-1">Re-Tiling & Epoxy Grout</h4>
-                    <p className="text-muted-foreground">Floor and lower wall tiles re-laid with epoxy grout for superior chemical resistance and watertight seal</p>
+                    <p className="text-muted-foreground">The floor and lower wall tiles are re-laid. We use epoxy grout for the floor and critical wall junctions, providing superior chemical resistance, stain-proofing, and a completely watertight seal.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-lg font-bold flex-shrink-0">6</div>
                   <div>
                     <h4 className="font-bold text-foreground mb-1">Final Seal & Cure</h4>
-                    <p className="text-muted-foreground">Perimeter joints sealed with flexible, anti-mould silicone. 24-hour cure, ready Day 3</p>
+                    <p className="text-muted-foreground">Perimeter joints are sealed with flexible, anti-mould silicone. The job is completed in 2 days, followed by a 24-hour cure period—your shower is ready to use on Day 3.</p>
                   </div>
                 </div>
               </div>
@@ -194,8 +278,8 @@ const ShowerReTile = () => {
         </div>
       </section>
 
-      {/* Trust & Expectations Section */}
-      <section className="py-16 bg-background">
+      {/* What You Can Expect Section */}
+      <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-center text-foreground mb-4">
@@ -238,28 +322,42 @@ const ShowerReTile = () => {
             </div>
 
             {/* Additional Benefits */}
-            <div className="bg-muted/50 p-8 rounded-lg">
+            <div className="bg-background p-8 rounded-lg border">
               <h3 className="text-2xl font-bold text-center text-foreground mb-8">Why Homeowners Choose Our Re-Tile Service</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
                   <div>
+                    <h4 className="font-bold text-foreground mb-1">Licensed Waterproofing Specialists</h4>
+                    <p className="text-sm text-muted-foreground">Our team are experts in wet area compliance and permanent leak resolution</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
                     <h4 className="font-bold text-foreground mb-1">Cleanliness and Containment</h4>
-                    <p className="text-sm text-muted-foreground">We use drop sheets, protect adjacent areas, and remove all demolition debris from your property</p>
+                    <p className="text-sm text-muted-foreground">We use drop sheets, protect adjacent areas, and remove all demolition debris and rubbish from your property</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-bold text-foreground mb-1">Premium Materials Only</h4>
-                    <p className="text-sm text-muted-foreground">Professional-grade membranes and epoxy grout for the most critical areas</p>
+                    <h4 className="font-bold text-foreground mb-1">Guaranteed Workmanship</h4>
+                    <p className="text-sm text-muted-foreground">We stand behind the quality of our full rip-out and re-tile system with a comprehensive warranty</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-bold text-foreground mb-1">Correct Falls Guaranteed</h4>
-                    <p className="text-sm text-muted-foreground">Precision screeding ensures water flows to the drain—no more pooling</p>
+                    <h4 className="font-bold text-foreground mb-1">Clear Communication</h4>
+                    <p className="text-sm text-muted-foreground">You receive an itemised quote and a clear explanation of the process before any work begins—no hidden costs or surprises</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-bold text-foreground mb-1">Durable, Premium Materials</h4>
+                    <p className="text-sm text-muted-foreground">We use professional-grade membranes and the superior performance of epoxy grout for the most critical areas</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -302,7 +400,7 @@ const ShowerReTile = () => {
       </section>
 
       {/* SEO Services Overview */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-foreground mb-6">
