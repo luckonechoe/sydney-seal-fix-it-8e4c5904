@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import ShowerLeakRepair from "./pages/ShowerLeakRepair";
+import ShowerReTile from "./pages/ShowerReTile";
 import BalconyLeakRepair from "./pages/BalconyLeakRepair";
 import BathroomKitchenRestoration from "./pages/BathroomKitchenRestoration";
 import SilverIonTechnology from "./pages/SilverIonTechnology";
@@ -25,6 +26,7 @@ const AppContent = () => {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/shower-leak-repair" element={<ShowerLeakRepair />} />
+        <Route path="/shower-re-tile" element={<ShowerReTile />} />
         <Route path="/balcony-leak-repair" element={<BalconyLeakRepair />} />
         <Route path="/bathroom-kitchen-restoration" element={<BathroomKitchenRestoration />} />
         <Route path="/silver-ion-technology" element={<SilverIonTechnology />} />
