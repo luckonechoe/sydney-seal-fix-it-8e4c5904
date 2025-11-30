@@ -16,6 +16,7 @@ import CommercialWaterproofing from "./pages/CommercialWaterproofing";
 import CompleteReconstruction from "./pages/CompleteReconstruction";
 import NotFound from "./pages/NotFound";
 import CookieConsent from "./components/CookieConsent";
+import ScrollToTop from "./components/ScrollToTop";
 import { usePageTracking } from "./hooks/useAnalytics";
 
 const queryClient = new QueryClient();
@@ -50,6 +51,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <AppContent />
       </BrowserRouter>
     </TooltipProvider>
