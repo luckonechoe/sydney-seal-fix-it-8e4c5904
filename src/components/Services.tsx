@@ -57,10 +57,10 @@ const Services = () => {
       image: showerRetileProcess,
       title: (
         <>
-          Full Shower Waterproofing<br />& Re-Tile
+          Shower Waterproofing<br />& Re-Tile
         </>
       ),
-      titleText: "Full Shower Waterproofing & Re-Tile",
+      titleText: "Shower Waterproofing & Re-Tile",
       description: "Complete shower reconstruction with full rip-out and re-tiling for permanent leak resolution",
       features: ["Full reconstruction", "Compliant waterproofing", "Epoxy grout finish"],
       link: "/shower-re-tile"
@@ -69,10 +69,10 @@ const Services = () => {
       image: balconyRetileProcess,
       title: (
         <>
-          Full Balcony Waterproofing<br />& Re-Tile
+          Balcony Waterproofing<br />& Re-Tile
         </>
       ),
-      titleText: "Full Balcony Waterproofing & Re-Tile",
+      titleText: "Balcony Waterproofing & Re-Tile",
       description: "Complete balcony reconstruction with new waterproofing membrane and premium tiling",
       features: ["Full demolition", "New membrane system", "Premium tile finish"],
       link: "/balcony-re-tile"
