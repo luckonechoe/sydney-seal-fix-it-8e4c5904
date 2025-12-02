@@ -1,5 +1,5 @@
-
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button } from '@/components/ui/button';
@@ -222,7 +222,9 @@ const PreventativeMaintenance = () => {
               </div>
             </div>
             <div className="text-center mt-6">
-              <Button variant="outline" size="lg">Request Custom Quote</Button>
+              <Link to="/contact">
+                <Button variant="outline" size="lg">Request Custom Quote</Button>
+              </Link>
             </div>
           </div>
         </div>
