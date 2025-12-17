@@ -41,7 +41,7 @@ const CompleteReconstruction = () => {
   const keyBenefits = [
     "Double-layer waterproofing protection",
     "Addresses both grout and membrane failures",
-    "10-year warranty on workmanship and products",
+    "5-year warranty on workmanship and products",
     "Licensed and AS3740 & AS4654.2 compliant",
     "Premium anti-mold and stain-resistant materials",
     "Complete peace of mind with new waterproofing",
@@ -55,7 +55,7 @@ const CompleteReconstruction = () => {
         <title>Complete Tile Reconstruction Sydney | Double-Layer Waterproofing | Sydney Sealed</title>
         <meta 
           name="description" 
-          content="Complete tile reconstruction Sydney with double-layer waterproofing protection. Full substrate rebuild, professional waterproofing membrane, and premium epoxy grout finish. 10-year warranty." 
+          content="Complete tile reconstruction Sydney with double-layer waterproofing protection. Full substrate rebuild, professional waterproofing membrane, and premium epoxy grout finish. 5-year warranty." 
         />
         <meta name="keywords" content="complete tile reconstruction Sydney, double-layer waterproofing, tile reconstruction waterproofing Sydney, substrate waterproofing, epoxy grout Sydney" />
         <link rel="canonical" href="https://sydneysealed.com.au/complete-reconstruction" />

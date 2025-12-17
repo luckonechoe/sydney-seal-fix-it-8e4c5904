@@ -24,8 +24,8 @@ const WhyChooseUs = () => {
     },
     {
       icon: <Hammer className="w-8 h-8 text-blue-600" />,
-      title: "10 Year Warranty",
-      description: "Every leak repair is protected by our lifetime protection and 10 year warranty"
+      title: "5 Year Warranty",
+      description: "Every leak repair is protected by our lifetime protection and 5 year warranty"
     }
   ];
 

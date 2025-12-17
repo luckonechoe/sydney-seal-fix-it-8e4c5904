@@ -11,7 +11,7 @@ const BalconyReTile = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Balcony Re-Tile Sydney - Full Strip-Out & Structural Waterproofing | Sydney Sealed</title>
-        <meta name="description" content="Protect your balcony from structural damage with our full strip-out and re-tile service in Sydney. Slab inspection, falls correction, external-grade waterproofing. 10-year warranty. Call 0412 345 678" />
+        <meta name="description" content="Protect your balcony from structural damage with our full strip-out and re-tile service in Sydney. Slab inspection, falls correction, external-grade waterproofing. 5-year warranty. Call 0412 345 678" />
         <meta name="keywords" content="balcony re-tile Sydney, balcony rip-out Sydney, balcony waterproofing membrane, concrete spalling repair, balcony structural repair Sydney, external waterproofing Sydney" />
         <link rel="canonical" href="https://yourdomain.com/balcony-re-tile" />
       </Helmet>
@@ -326,7 +326,7 @@ const BalconyReTile = () => {
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-bold text-foreground mb-1">10-Year Warranty</h4>
+                    <h4 className="font-bold text-foreground mb-1">5-Year Warranty</h4>
                     <p className="text-sm text-muted-foreground">Comprehensive warranty coverage on all workmanship and materials</p>
                   </div>
                 </div>
@@ -357,7 +357,7 @@ const BalconyReTile = () => {
               </Button>
             </div>
             <p className="mt-6 text-sm opacity-75">
-              ✓ Full slab inspection &nbsp;|&nbsp; ✓ Falls correction &nbsp;|&nbsp; ✓ External-grade waterproofing &nbsp;|&nbsp; ✓ 10-year warranty
+              ✓ Full slab inspection &nbsp;|&nbsp; ✓ Falls correction &nbsp;|&nbsp; ✓ External-grade waterproofing &nbsp;|&nbsp; ✓ 5-year warranty
             </p>
           </div>
         </div>
