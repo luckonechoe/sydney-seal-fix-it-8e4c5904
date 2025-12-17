@@ -11,7 +11,7 @@ const ShowerReTile = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Shower Re-Tile Sydney - Permanent Shower Rip-Out & Reconstruction | Sydney Sealed</title>
-        <meta name="description" content="Stop shower leaks permanently with our full rip-out and re-tile service in Sydney. Complete demolition, compliant waterproofing, epoxy grout finish. 2-day job, 10-year warranty. Call 0412 345 678" />
+        <meta name="description" content="Stop shower leaks permanently with our full rip-out and re-tile service in Sydney. Complete demolition, compliant waterproofing, epoxy grout finish. 2-day job, 5-year warranty. Call 0412 345 678" />
         <meta name="keywords" content="shower re-tile Sydney, shower rip-out Sydney, shower reconstruction, shower waterproofing membrane, epoxy grout shower, permanent shower repair Sydney, shower floor replacement Sydney" />
         <link rel="canonical" href="https://yourdomain.com/shower-re-tile" />
       </Helmet>
@@ -301,7 +301,7 @@ const ShowerReTile = () => {
               <Card className="text-center">
                 <CardContent className="p-6">
                   <Shield className="w-10 h-10 text-primary mx-auto mb-3" />
-                  <h3 className="font-bold text-foreground mb-1">10-Year Warranty</h3>
+                  <h3 className="font-bold text-foreground mb-1">5-Year Warranty</h3>
                   <p className="text-sm text-muted-foreground">Comprehensive coverage on our full rip-out and re-tile system</p>
                 </CardContent>
               </Card>
@@ -393,7 +393,7 @@ const ShowerReTile = () => {
               </Button>
             </div>
             <p className="mt-6 text-sm opacity-75">
-              ✓ 2-day completion &nbsp;|&nbsp; ✓ Compliant waterproofing &nbsp;|&nbsp; ✓ Epoxy grout finish &nbsp;|&nbsp; ✓ 10-year warranty
+              ✓ 2-day completion &nbsp;|&nbsp; ✓ Compliant waterproofing &nbsp;|&nbsp; ✓ Epoxy grout finish &nbsp;|&nbsp; ✓ 5-year warranty
             </p>
           </div>
         </div>

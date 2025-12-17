@@ -25,7 +25,7 @@ const TrustBadges = () => {
     },
     {
       icon: Star,
-      title: "10 Year Warranty",
+      title: "5 Year Warranty",
       description: "Guaranteed workmanship & materials",
       color: "text-purple-600",
       bg: "bg-purple-50"
