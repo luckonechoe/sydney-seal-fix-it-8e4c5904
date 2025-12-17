@@ -51,7 +51,7 @@ const TrustBadges = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">
-            Why Choose Sydney Seal & Grout?
+            Why Choose Sydney Seal?
           </h2>
           <p className="text-muted-foreground text-sm sm:text-base">
             Professional expertise you can trust for lasting results

@@ -10,7 +10,7 @@ const ShowerReTile = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Shower Re-Tile Sydney - Permanent Shower Rip-Out & Reconstruction | Sydney Sealed</title>
+        <title>Shower Re-Tile Sydney - Permanent Shower Rip-Out & Reconstruction | Sydney Seal</title>
         <meta name="description" content="Stop shower leaks permanently with our full rip-out and re-tile service in Sydney. Complete demolition, compliant waterproofing, epoxy grout finish. 2-day job, 5-year warranty. Call 0412 345 678" />
         <meta name="keywords" content="shower re-tile Sydney, shower rip-out Sydney, shower reconstruction, shower waterproofing membrane, epoxy grout shower, permanent shower repair Sydney, shower floor replacement Sydney" />
         <link rel="canonical" href="https://yourdomain.com/shower-re-tile" />

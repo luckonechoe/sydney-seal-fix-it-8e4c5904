@@ -10,7 +10,7 @@ const BalconyReTile = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Balcony Re-Tile Sydney - Full Strip-Out & Structural Waterproofing | Sydney Sealed</title>
+        <title>Balcony Re-Tile Sydney - Full Strip-Out & Structural Waterproofing | Sydney Seal</title>
         <meta name="description" content="Protect your balcony from structural damage with our full strip-out and re-tile service in Sydney. Slab inspection, falls correction, external-grade waterproofing. 5-year warranty. Call 0412 345 678" />
         <meta name="keywords" content="balcony re-tile Sydney, balcony rip-out Sydney, balcony waterproofing membrane, concrete spalling repair, balcony structural repair Sydney, external waterproofing Sydney" />
         <link rel="canonical" href="https://yourdomain.com/balcony-re-tile" />
