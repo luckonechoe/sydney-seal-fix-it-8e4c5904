@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-            Why Choose Sydney Seal & Grout?
+            Why Choose Sydney Seal?
           </h2>
           <p className="text-xl text-muted-foreground">
             Advanced technology, professional expertise, and lifetime protection guarantee

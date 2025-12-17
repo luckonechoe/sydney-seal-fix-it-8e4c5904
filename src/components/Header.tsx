@@ -48,7 +48,7 @@ const Header = () => {
             </div>
             <div className="hidden sm:block">
               <h1 className="text-lg sm:text-xl font-bold text-white hover:text-primary transition-colors duration-300">
-                Sydney Sealed
+                Sydney Seal
               </h1>
               <p className="text-xs sm:text-sm text-gray-400 animate-fade-in [animation-delay:0.3s]">
                 Professional Leak Repair

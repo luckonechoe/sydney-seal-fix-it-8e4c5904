@@ -12,7 +12,7 @@ const Footer = () => {
                 <span className="text-white font-bold">SS</span>
               </div>
               <div>
-                <h3 className="font-bold text-lg">Sydney Sealed</h3>
+                <h3 className="font-bold text-lg">Sydney Seal</h3>
                 <p className="text-gray-400 text-sm">Professional Leak Repair</p>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 Sydney Seal & Grout. All rights reserved. | Licensed & Insured | Silver-Ion Technology | Lifetime Warranty
+            © 2024 Sydney Seal. All rights reserved. | Licensed & Insured | Silver-Ion Technology | Lifetime Warranty
           </p>
         </div>
       </div>

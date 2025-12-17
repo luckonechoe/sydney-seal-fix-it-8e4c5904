@@ -15,8 +15,8 @@ const NotFound = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <Helmet>
-        <title>404 - Page Not Found | Sydney Sealed</title>
-        <meta name="description" content="The page you're looking for doesn't exist. Return to Sydney Sealed homepage for waterproofing and leak repair services across Sydney." />
+        <title>404 - Page Not Found | Sydney Seal</title>
+        <meta name="description" content="The page you're looking for doesn't exist. Return to Sydney Seal homepage for waterproofing and leak repair services across Sydney." />
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       
