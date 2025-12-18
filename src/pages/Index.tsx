@@ -10,6 +10,7 @@ import BeforeAfterGallery from '../components/BeforeAfterGallery';
 import ServiceAreas from '../components/ServiceAreas';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import ServiceCalculator from '../components/ServiceCalculator';
 
 import { usePageTracking } from '../hooks/useAnalytics';
 import { useEffect } from 'react';
@@ -83,6 +84,7 @@ const Index = () => {
       <Services />
       <WhyChooseUs />
       <BeforeAfterGallery />
+      <ServiceCalculator />
       <PerformanceMetrics />
       <ServiceAreas />
       <Contact />

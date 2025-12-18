@@ -16,6 +16,11 @@ import CommercialWaterproofing from "./pages/CommercialWaterproofing";
 import CompleteReconstruction from "./pages/CompleteReconstruction";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import About from "./pages/About";
+import FAQ from "./pages/FAQ";
+import Testimonials from "./pages/Testimonials";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import CookieConsent from "./components/CookieConsent";
 import ScrollToTop from "./components/ScrollToTop";
 import { usePageTracking } from "./hooks/useAnalytics";
@@ -39,6 +44,11 @@ const AppContent = () => {
         <Route path="/commercial-waterproofing" element={<CommercialWaterproofing />} />
         <Route path="/complete-reconstruction" element={<CompleteReconstruction />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
