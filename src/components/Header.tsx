@@ -58,6 +58,12 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6">
+            <nav className="flex items-center space-x-4 text-sm">
+              <a href="/about" className="text-gray-300 hover:text-primary transition-colors">About</a>
+              <a href="/testimonials" className="text-gray-300 hover:text-primary transition-colors">Reviews</a>
+              <a href="/blog" className="text-gray-300 hover:text-primary transition-colors">Blog</a>
+              <a href="/faq" className="text-gray-300 hover:text-primary transition-colors">FAQ</a>
+            </nav>
             <button 
               onClick={handlePhoneClick}
               className="flex items-center space-x-2 text-gray-400 hover:text-primary transition-colors touch-manipulation"
@@ -96,6 +102,12 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden border-t border-gray-800">
             <div className="py-4 space-y-3">
+              <div className="flex flex-col space-y-2 pb-3 border-b border-gray-800">
+                <a href="/about" className="px-4 py-2 text-gray-300 hover:text-primary transition-colors">About Us</a>
+                <a href="/testimonials" className="px-4 py-2 text-gray-300 hover:text-primary transition-colors">Reviews</a>
+                <a href="/blog" className="px-4 py-2 text-gray-300 hover:text-primary transition-colors">Blog</a>
+                <a href="/faq" className="px-4 py-2 text-gray-300 hover:text-primary transition-colors">FAQ</a>
+              </div>
               <Button 
                 onClick={handleQuoteClick} 
                 className="w-full touch-manipulation min-h-[48px]"
