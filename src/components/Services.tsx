@@ -53,8 +53,8 @@ const Services = () => {
     },
     {
       image: completeReconstructionDamage,
-      title: "Complete Reconstruction",
-      titleText: "Complete Reconstruction",
+      title: "Waterproof & Reconstruction",
+      titleText: "Waterproof & Reconstruction",
       description: "Full tile reconstruction with double-layer waterproofing for severe leak situations requiring substrate-level repairs",
       features: ["Double-layer protection", "Full substrate rebuild", "Premium epoxy grout"],
       link: "/complete-reconstruction"
