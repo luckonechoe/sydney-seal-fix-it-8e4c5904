@@ -6,7 +6,7 @@ import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { ReactNode } from 'react';
-import completeReconstructionDamage from '@/assets/complete-reconstruction-damage.jpg';
+
 
 const Services = () => {
   const { elementRef, isVisible } = useScrollAnimation();
@@ -50,14 +50,6 @@ const Services = () => {
       description: "Reliable waterproofing for strata, real estate, property managers, and commercial organizations",
       features: ["Reliable & professional", "Cost-effective solution", "Convenient repair time"],
       link: "/commercial-waterproofing"
-    },
-    {
-      image: completeReconstructionDamage,
-      title: "Waterproof & Reconstruction",
-      titleText: "Waterproof & Reconstruction",
-      description: "Complete waterproofing and re-tiling service for bathrooms and balconies with lasting results",
-      features: ["Full waterproof membrane", "Complete re-tiling", "Premium epoxy grout"],
-      link: "/complete-reconstruction"
     }
   ];
 
