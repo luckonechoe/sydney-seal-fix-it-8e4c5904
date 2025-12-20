@@ -56,7 +56,7 @@ const Services = () => {
       title: "Waterproof & Reconstruction",
       titleText: "Waterproof & Reconstruction",
       description: "Full tile reconstruction with double-layer waterproofing for severe leak situations requiring substrate-level repairs",
-      features: ["Double-layer protection", "Full substrate rebuild", "Premium epoxy grout"],
+      features: ["Double-layer protection", "Complete re-tiling", "Premium epoxy grout"],
       link: "/complete-reconstruction"
     }
   ];
