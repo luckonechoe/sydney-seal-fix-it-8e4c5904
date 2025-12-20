@@ -6,8 +6,6 @@ import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { ReactNode } from 'react';
-import showerRetileProcess from '@/assets/shower-retile-process.jpg';
-import balconyRetileProcess from '@/assets/balcony-retile-process.jpg';
 import completeReconstructionDamage from '@/assets/complete-reconstruction-damage.jpg';
 
 const Services = () => {
@@ -52,30 +50,6 @@ const Services = () => {
       description: "Reliable waterproofing for strata, real estate, property managers, and commercial organizations",
       features: ["Reliable & professional", "Cost-effective solution", "Convenient repair time"],
       link: "/commercial-waterproofing"
-    },
-    {
-      image: showerRetileProcess,
-      title: (
-        <>
-          Shower Waterproofing<br />& Re-Tile
-        </>
-      ),
-      titleText: "Shower Waterproofing & Re-Tile",
-      description: "Complete shower reconstruction with full rip-out and re-tiling for permanent leak resolution",
-      features: ["Full reconstruction", "Compliant waterproofing", "Epoxy grout finish"],
-      link: "/shower-re-tile"
-    },
-    {
-      image: balconyRetileProcess,
-      title: (
-        <>
-          Balcony Waterproofing<br />& Re-Tile
-        </>
-      ),
-      titleText: "Balcony Waterproofing & Re-Tile",
-      description: "Complete balcony reconstruction with new waterproofing membrane and premium tiling",
-      features: ["Full demolition", "New membrane system", "Premium tile finish"],
-      link: "/balcony-re-tile"
     },
     {
       image: completeReconstructionDamage,
