@@ -12,7 +12,7 @@ const CommercialWaterproofing = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Commercial Waterproofing Sydney - Strata & Property Management Services</title>
-        <meta name="description" content="Expert commercial waterproofing for Sydney strata and property managers. Multi-unit buildings, shopping centers, offices. Lifetime warranty, minimal disruption. Free quote - call 0412 345 678" />
+        <meta name="description" content="Expert commercial waterproofing for Sydney strata and property managers. Multi-unit buildings, shopping centers, offices. 5-year warranty, minimal disruption. Free quote - call 0412 345 678" />
         <meta name="keywords" content="commercial waterproofing Sydney, strata waterproofing Sydney, property management waterproofing, multi-unit building repairs Sydney, commercial leak repair Sydney, building maintenance Sydney" />
         <link rel="canonical" href="https://yourdomain.com/commercial-waterproofing" />
       </Helmet>
@@ -197,7 +197,7 @@ const CommercialWaterproofing = () => {
                       <li className="flex items-start">
                         <CheckCircle className="w-6 h-6 text-primary mr-3 flex-shrink-0 mt-0.5" />
                         <div>
-                          <p className="font-semibold text-foreground">Lifetime Warranty Coverage</p>
+                          <p className="font-semibold text-foreground">5-Year Warranty Coverage</p>
                           <p className="text-sm text-muted-foreground">Comprehensive protection on all materials and workmanship</p>
                         </div>
                       </li>

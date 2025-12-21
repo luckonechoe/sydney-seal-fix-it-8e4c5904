@@ -163,7 +163,7 @@ const ShowerLeakRepair = () => {
                   <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-lg font-bold flex-shrink-0">2</div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Guaranteed Results</h4>
-                    <p className="text-sm text-muted-foreground">Lifetime warranty on workmanship and materials—we stand behind our work</p>
+                    <p className="text-sm text-muted-foreground">5-year warranty on workmanship and materials—we stand behind our work</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -211,7 +211,7 @@ const ShowerLeakRepair = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     <Shield className="w-8 h-8 text-primary mr-3" />
-                    <h3 className="font-bold text-foreground">Lifetime Warranty</h3>
+                    <h3 className="font-bold text-foreground">5-Year Warranty</h3>
                   </div>
                   <p className="text-sm text-muted-foreground">Comprehensive coverage on all materials and workmanship</p>
                 </CardContent>
@@ -277,7 +277,7 @@ const ShowerLeakRepair = () => {
               </Button>
             </div>
             <p className="mt-6 text-sm opacity-75">
-              ✓ Same-day service available &nbsp;|&nbsp; ✓ No-obligation quotes &nbsp;|&nbsp; ✓ Lifetime warranty included
+              ✓ Same-day service available &nbsp;|&nbsp; ✓ No-obligation quotes &nbsp;|&nbsp; ✓ 5-year warranty included
             </p>
           </div>
         </div>

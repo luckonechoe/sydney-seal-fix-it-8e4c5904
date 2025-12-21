@@ -11,7 +11,7 @@ const BathroomKitchenRestoration = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Bathroom & Kitchen Restoration Sydney - Tile, Grout & Waterproofing Experts</title>
-        <meta name="description" content="Complete bathroom and kitchen restoration services in Sydney. Tile restoration, antimicrobial grout renewal, waterproofing & mould treatment. Lifetime warranty. Free consultation - call 0412 345 678" />
+        <meta name="description" content="Complete bathroom and kitchen restoration services in Sydney. Tile restoration, antimicrobial grout renewal, waterproofing & mould treatment. 5-year warranty. Free consultation - call 0412 345 678" />
         <meta name="keywords" content="bathroom restoration Sydney, kitchen restoration Sydney, tile restoration, grout renewal Sydney, waterproofing Sydney, antimicrobial bathroom treatment, kitchen splashback repair Sydney" />
         <link rel="canonical" href="https://yourdomain.com/bathroom-kitchen-restoration" />
       </Helmet>
@@ -204,7 +204,7 @@ const BathroomKitchenRestoration = () => {
             <Card className="text-center">
               <CardContent className="p-6">
                 <Star className="w-12 h-12 text-purple-600 mx-auto mb-4" />
-                <h3 className="font-bold text-lg mb-2">Lifetime Warranty</h3>
+                <h3 className="font-bold text-lg mb-2">5-Year Warranty</h3>
                 <p className="text-gray-600">Guaranteed antimicrobial protection</p>
               </CardContent>
             </Card>

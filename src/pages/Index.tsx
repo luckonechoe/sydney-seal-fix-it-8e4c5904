@@ -72,8 +72,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Sydney Seal | Shower Leak Repair & Waterproofing Experts Sydney | 10-Year Warranty</title>
-        <meta name="description" content="Sydney's #1 waterproofing specialists. Expert shower leak repair without tile removal, balcony waterproofing & bathroom restoration. AS3740 certified, licensed professionals with 10-year warranty. Same-day emergency service across Eastern Suburbs, North Shore, Inner West, Parramatta & all Sydney suburbs. Silver-ion antimicrobial technology. Call 0412 345 678 for free assessment." />
+        <title>Sydney Seal | Shower Leak Repair & Waterproofing Experts Sydney | 5-Year Warranty</title>
+        <meta name="description" content="Sydney's #1 waterproofing specialists. Expert shower leak repair without tile removal, balcony waterproofing & bathroom restoration. AS3740 certified, licensed professionals with 5-year warranty. Same-day emergency service across Eastern Suburbs, North Shore, Inner West, Parramatta & all Sydney suburbs. Silver-ion antimicrobial technology. Call 0412 345 678 for free assessment." />
         <meta name="keywords" content="shower leak repair Sydney, waterproofing Sydney, balcony leak repair, bathroom waterproofing, grout sealing Sydney, waterproof shower without removing tiles, leak repair Eastern Suburbs, waterproofing North Shore Sydney, bathroom restoration Inner West, AS3740 certified waterproofing, antimicrobial grout sealing, mould resistant bathroom Sydney, emergency leak repair Sydney, commercial waterproofing Sydney, strata waterproofing services" />
         <link rel="canonical" href="https://sydneyseal.com.au/" />
         
@@ -87,14 +87,14 @@ const Index = () => {
         
         {/* Open Graph */}
         <meta property="og:title" content="Sydney Seal | Expert Shower Leak Repair & Waterproofing Sydney" />
-        <meta property="og:description" content="Sydney's trusted waterproofing specialists. Shower leak repair, balcony waterproofing & bathroom restoration. AS3740 certified, 10-year warranty." />
+        <meta property="og:description" content="Sydney's trusted waterproofing specialists. Shower leak repair, balcony waterproofing & bathroom restoration. AS3740 certified, 5-year warranty." />
         <meta property="og:type" content="business.business" />
         <meta property="og:locale" content="en_AU" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Sydney Seal | Waterproofing Experts Sydney" />
-        <meta name="twitter:description" content="Expert shower leak repair & waterproofing across Sydney. AS3740 certified, 10-year warranty." />
+        <meta name="twitter:description" content="Expert shower leak repair & waterproofing across Sydney. AS3740 certified, 5-year warranty." />
       </Helmet>
       
       {/* JSON-LD Structured Data */}

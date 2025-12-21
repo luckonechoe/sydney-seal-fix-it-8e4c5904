@@ -14,7 +14,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
     "@id": "https://sydneyseal.com.au/#business",
     "name": "Sydney Seal",
     "alternateName": "Sydney Seal Waterproofing",
-    "description": "Sydney's trusted waterproofing and leak repair specialists. Licensed professionals providing shower leak repair, balcony waterproofing, and bathroom restoration with 10-year warranty. AS3740 certified, same-day emergency service across all Sydney suburbs.",
+    "description": "Sydney's trusted waterproofing and leak repair specialists. Licensed professionals providing shower leak repair, balcony waterproofing, and bathroom restoration with 5-year warranty. AS3740 certified, same-day emergency service across all Sydney suburbs.",
     "url": "https://sydneyseal.com.au",
     "telephone": "+61412345678",
     "email": "info@sydneysealgrout.com.au",
@@ -77,7 +77,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
           "itemOffered": {
             "@type": "Service",
             "name": "Shower Leak Repair Sydney",
-            "description": "Professional shower leak repair without tile removal. Non-invasive waterproofing technology with same-day service and 10-year warranty."
+            "description": "Professional shower leak repair without tile removal. Non-invasive waterproofing technology with same-day service and 5-year warranty."
           }
         },
         {
@@ -215,7 +215,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
         "name": "Can you fix a shower leak without removing tiles?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Sydney Seal specialises in non-invasive shower leak repair that doesn't require tile removal. Our advanced sealing technology penetrates existing grout and surfaces to create a waterproof barrier. This method is faster, less disruptive, and more cost-effective than traditional tile replacement, with results backed by our 10-year warranty."
+          "text": "Yes, Sydney Seal specialises in non-invasive shower leak repair that doesn't require tile removal. Our advanced sealing technology penetrates existing grout and surfaces to create a waterproof barrier. This method is faster, less disruptive, and more cost-effective than traditional tile replacement, with results backed by our 5-year warranty."
         }
       },
       {
@@ -239,7 +239,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
         "name": "What warranty do you offer on waterproofing work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sydney Seal provides a comprehensive 10-year warranty on all waterproofing repairs and restoration work. All our work is AS3740 certified and meets Australian Standards for waterproofing wet areas. We also offer annual maintenance programs to ensure long-lasting protection for your investment."
+          "text": "Sydney Seal provides a comprehensive 5-year warranty on all waterproofing repairs and restoration work. All our work is AS3740 certified and meets Australian Standards for waterproofing wet areas. We also offer annual maintenance programs to ensure long-lasting protection for your investment."
         }
       },
       {
