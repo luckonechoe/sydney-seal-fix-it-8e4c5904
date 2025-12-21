@@ -211,7 +211,7 @@ const BalconyLeakRepair = () => {
               <Card className="text-center">
                 <CardContent className="p-6">
                   <Umbrella className="w-10 h-10 text-primary mx-auto mb-3" />
-                  <h3 className="font-bold text-foreground mb-1">Lifetime Warranty</h3>
+                  <h3 className="font-bold text-foreground mb-1">5-Year Warranty</h3>
                   <p className="text-sm text-muted-foreground">Comprehensive coverage on all work</p>
                 </CardContent>
               </Card>
