@@ -21,11 +21,11 @@ const ServiceCalculator = () => {
 
   const services = [
     { id: 'shower-leak', label: 'Shower Leak Repair', basePrice: 749 },
-    { id: 'shower-retile', label: 'Shower Re-Tile', basePrice: 2499 },
+    // { id: 'shower-retile', label: 'Shower Re-Tile', basePrice: 2499 },
     { id: 'balcony-leak', label: 'Balcony Leak Repair', basePrice: 1649 },
-    { id: 'balcony-retile', label: 'Balcony Re-Tile', basePrice: 3999 },
-    { id: 'bathroom-restore', label: 'Bathroom Restoration', basePrice: 1999 },
-    { id: 'complete-recon', label: 'Complete Reconstruction', basePrice: 4999 }
+    // { id: 'balcony-retile', label: 'Balcony Re-Tile', basePrice: 3999 },
+    { id: 'bathroom-restore', label: 'Bathroom Restoration', basePrice: 1949 },
+    // { id: 'complete-recon', label: 'Complete Reconstruction', basePrice: 4999 }
   ];
 
   const sizes = [
@@ -37,8 +37,8 @@ const ServiceCalculator = () => {
 
   const conditions = [
     { id: 'minor', label: 'Minor Issues', multiplier: 1, description: 'Small cracks, minor discoloration' },
-    { id: 'moderate', label: 'Moderate Damage', multiplier: 1.2, description: 'Visible leaks, some tile damage' },
-    { id: 'severe', label: 'Severe Damage', multiplier: 1.5, description: 'Major water damage, structural issues' }
+    { id: 'moderate', label: 'Moderate Damage', multiplier: 1, description: 'Visible leaks, some tile damage' },
+    { id: 'severe', label: 'Severe Damage', multiplier: 1, description: 'Major water damage, structural issues' }
   ];
 
   const urgencies = [
