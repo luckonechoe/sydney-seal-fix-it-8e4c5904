@@ -56,22 +56,25 @@ const Services = () => {
   return (
     <section 
       ref={elementRef}
+      id="services"
+      aria-labelledby="services-heading"
       className={`py-16 bg-muted/30 transition-all duration-1000 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
     >
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header section */}
-        <div className={`text-center mb-12 transition-all duration-1000 delay-200 ${
+        <header className={`text-center mb-12 transition-all duration-1000 delay-200 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}>
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Advanced Leak Repair & Restoration Services
+          <h2 id="services-heading" className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+            Professional Waterproofing Services Sydney
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Revolutionary silver-ion nanoparticle technology providing lifetime antimicrobial protection and mould resistance
+            AS3740 certified leak repair and restoration with revolutionary silver-ion nanoparticle technology 
+            providing lifetime antimicrobial protection and mould resistance
           </p>
-        </div>
+        </header>
 
         {/* Service cards grid - 3 columns */}
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -89,8 +92,11 @@ const Services = () => {
               <div className="h-48 overflow-hidden flex-shrink-0">
                 <img 
                   src={service.image} 
-                  alt={service.titleText}
+                  alt={`${service.titleText} - Professional waterproofing service in Sydney`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                  width="800"
+                  height="400"
                 />
               </div>
               

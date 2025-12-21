@@ -41,12 +41,15 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-8 sm:py-12 lg:py-24">
+    <section 
+      className="bg-gradient-to-br from-blue-50 to-blue-100 py-8 sm:py-12 lg:py-24"
+      aria-labelledby="hero-heading"
+    >
       <div className="container mx-auto px-4 sm:px-6">
         {/* Mobile-first Z-pattern layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Primary Content - Mobile First */}
-          <div className="order-1">
+          <article className="order-1">
             {/* Trust Badge Bar - Mobile Optimized */}
             <div className="flex flex-wrap items-center gap-2 mb-4 sm:mb-6">
               <div className="flex items-center bg-green-100 px-2 py-1 rounded-full">
@@ -68,13 +71,14 @@ const Hero = () => {
               <span className="text-primary font-semibold text-sm sm:text-base">Serving Sydney & Surrounds</span>
             </div>
             
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-              Advanced Leak Repair & 
-              <span className="text-primary"> Restoration Services</span>
+            <h1 id="hero-heading" className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
+              Sydney's Trusted Experts in
+              <span className="text-primary"> Shower Leak Repair & Waterproofing</span>
             </h1>
             
             <p className="text-base sm:text-lg lg:text-xl text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
-              Expert waterproofing solutions for showers, balconies, and bathrooms. 10-year warranty. Same-day emergency service across Sydney.
+              Professional waterproofing solutions for showers, balconies, and bathrooms across Sydney. 
+              AS3740 certified, 10-year warranty, same-day emergency service. No tile removal required.
             </p>
 
             <div className="bg-blue-50 border-l-4 border-primary p-3 sm:p-4 mb-6 sm:mb-8 rounded-r-lg">
@@ -139,10 +143,10 @@ const Hero = () => {
                 <div className="text-sm sm:text-base text-muted-foreground">Warranty</div>
               </div>
             </div>
-          </div>
+          </article>
           
           {/* Contact Form - Mobile First */}
-          <div className="order-2">
+          <aside className="order-2" aria-label="Get free assessment form">
             <Card className="p-4 sm:p-6 lg:p-8 bg-card shadow-xl">
               <h3 className="text-xl sm:text-2xl font-bold text-card-foreground mb-4 sm:mb-6 text-center">Get Your Free Assessment</h3>
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -222,7 +226,7 @@ const Hero = () => {
                 </Button>
               </form>
             </Card>
-          </div>
+          </aside>
         </div>
       </div>
     </section>
