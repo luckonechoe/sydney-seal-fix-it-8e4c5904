@@ -39,7 +39,7 @@ const blogContent: Record<string, any> = {
       <p>Water escaping from your shower can damage adjacent flooring. Look for warping, buckling, or soft spots in timber floors, or lifting in vinyl or tiles near the shower.</p>
       
       <h2>What to Do If You Spot These Signs</h2>
-      <p>If you notice any of these warning signs, don't delay action. Water damage compounds quickly, and what starts as a minor repair can become a major renovation. Contact a professional waterproofing specialist for an inspection. At Sydney Seal, we offer free inspections and can identify the source of leaks using non-invasive testing methods.</p>
+      <p>If you notice any of these warning signs, don't delay action. Water damage compounds quickly, and what starts as a minor repair can become a major renovation. Contact a professional waterproofing specialist for an inspection. At Sydney Sealed, we offer free inspections and can identify the source of leaks using non-invasive testing methods.</p>
       
       <p>Early detection and repair can save you thousands of dollars and prevent health issues associated with mould exposure. Our repair solutions come with a 5 year warranty, giving you lasting peace of mind.</p>
     `
@@ -74,7 +74,7 @@ const blogContent: Record<string, any> = {
       <h2>Is It Worth the Extra Cost?</h2>
       <p>Antimicrobial grout typically costs 20-30% more than standard grout. However, when you factor in the reduced cleaning effort, longer lifespan, and health benefits, most homeowners find it's money well spent.</p>
       
-      <p>At Sydney Seal, we use premium antimicrobial grout as standard on all our re-tile and restoration projects. Combined with our professional waterproofing, it's part of our commitment to delivering bathrooms that stay beautiful and healthy for years to come.</p>
+      <p>At Sydney Sealed, we use premium antimicrobial grout as standard on all our re-tile and restoration projects. Combined with our professional waterproofing, it's part of our commitment to delivering bathrooms that stay beautiful and healthy for years to come.</p>
     `
   }
 };
@@ -102,7 +102,7 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>{post.title} | Sydney Seal Blog</title>
+        <title>{post.title} | Sydney Sealed Blog</title>
         <meta name="description" content={post.excerpt} />
         <link rel="canonical" href={`https://yourdomain.com/blog/${slug}`} />
       </Helmet>

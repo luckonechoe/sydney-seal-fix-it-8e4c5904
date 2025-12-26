@@ -51,7 +51,7 @@ const TrustBadges = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">
-            Why Choose Sydney Seal?
+            Why Choose Sydney Sealed?
           </h2>
           <p className="text-muted-foreground text-sm sm:text-base">
             Professional expertise you can trust for lasting results
@@ -96,10 +96,10 @@ const TrustBadges = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <button 
-                onClick={() => window.location.href = 'tel:0411563444'}
+                onClick={() => window.location.href = 'tel:0421043444'}
                 className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold touch-manipulation min-h-[48px] hover:bg-primary/90 transition-colors"
               >
-                Call Now: 0411 563 444
+                Call Now: 0421 043 444
               </button>
               <button className="border border-primary text-primary px-6 py-3 rounded-lg font-semibold touch-manipulation min-h-[48px] hover:bg-primary/5 transition-colors">
                 Request Free Quote

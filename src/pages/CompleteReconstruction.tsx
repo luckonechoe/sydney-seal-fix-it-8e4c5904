@@ -52,7 +52,7 @@ const CompleteReconstruction = () => {
   return (
     <>
       <Helmet>
-        <title>Complete Tile Reconstruction Sydney | Double-Layer Waterproofing | Sydney Seal</title>
+        <title>Complete Tile Reconstruction Sydney | Double-Layer Waterproofing | Sydney Sealed</title>
         <meta 
           name="description" 
           content="Complete tile reconstruction Sydney with double-layer waterproofing protection. Full substrate rebuild, professional waterproofing membrane, and premium epoxy grout finish. 5-year warranty." 
