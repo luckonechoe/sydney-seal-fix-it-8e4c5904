@@ -164,7 +164,7 @@ const BeforeAfterGallery = () => {
                     <Button 
                       size="lg" 
                       className="px-8 py-3 text-lg font-semibold"
-                      onClick={() => window.location.href = 'tel:0411563444'}
+                      onClick={() => window.location.href = 'tel:0421043444'}
                     >
                       Get Your Free Assessment
                     </Button>

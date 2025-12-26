@@ -76,8 +76,8 @@ const Blog = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Blog | Waterproofing Tips & Guides - Sydney Seal</title>
-        <meta name="description" content="Expert waterproofing tips, guides, and advice from Sydney Seal. Learn about leak detection, bathroom maintenance, and waterproofing best practices." />
+        <title>Blog | Waterproofing Tips & Guides - Sydney Sealed</title>
+        <meta name="description" content="Expert waterproofing tips, guides, and advice from Sydney Sealed. Learn about leak detection, bathroom maintenance, and waterproofing best practices." />
         <link rel="canonical" href="https://yourdomain.com/blog" />
       </Helmet>
       

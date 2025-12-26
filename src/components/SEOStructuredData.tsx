@@ -12,14 +12,14 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "https://sydneyseal.com.au/#business",
-    "name": "Sydney Seal",
-    "alternateName": "Sydney Seal Waterproofing",
+    "name": "Sydney Sealed",
+    "alternateName": "Sydney Sealed Waterproofing",
     "description": "Sydney's trusted waterproofing and leak repair specialists. Licensed professionals providing shower leak repair, balcony waterproofing, and bathroom restoration with 5-year warranty. AS3740 certified, same-day emergency service across all Sydney suburbs.",
-    "url": "https://sydneyseal.com.au",
-    "telephone": "+61411563444",
+    "url": "https://sydneysealed.com.au",
+    "telephone": "+61421043444",
     "email": "info@sydneysealgrout.com.au",
-    "image": "https://sydneyseal.com.au/og-image.jpg",
-    "logo": "https://sydneyseal.com.au/logo.png",
+    "image": "https://sydneysealed.com.au/og-image.jpg",
+    "logo": "https://sydneysealed.com.au/logo.png",
     "priceRange": "$$",
     "currenciesAccepted": "AUD",
     "paymentAccepted": "Cash, Credit Card, Bank Transfer, EFTPOS",
@@ -129,7 +129,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
           "@type": "Person",
           "name": "James T."
         },
-        "reviewBody": "Sydney Seal fixed our balcony leak that other companies couldn't solve. Highly recommend their expertise and professionalism.",
+        "reviewBody": "Sydney Sealed fixed our balcony leak that other companies couldn't solve. Highly recommend their expertise and professionalism.",
         "datePublished": "2024-09-28"
       }
     ],
@@ -139,7 +139,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
     ],
     "founder": {
       "@type": "Person",
-      "name": "Sydney Seal Team"
+      "name": "Sydney Sealed Team"
     },
     "foundingDate": "2015",
     "slogan": "Sydney's Trusted Waterproofing Experts",
@@ -175,8 +175,8 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
     "description": serviceDescription,
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Sydney Seal",
-      "telephone": "+61411563444"
+      "name": "Sydney Sealed",
+      "telephone": "+61421043444"
     },
     "areaServed": {
       "@type": "City",
@@ -215,7 +215,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
         "name": "Can you fix a shower leak without removing tiles?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Sydney Seal specialises in non-invasive shower leak repair that doesn't require tile removal. Our advanced sealing technology penetrates existing grout and surfaces to create a waterproof barrier. This method is faster, less disruptive, and more cost-effective than traditional tile replacement, with results backed by our 5-year warranty."
+          "text": "Yes, Sydney Sealed specialises in non-invasive shower leak repair that doesn't require tile removal. Our advanced sealing technology penetrates existing grout and surfaces to create a waterproof barrier. This method is faster, less disruptive, and more cost-effective than traditional tile replacement, with results backed by our 5-year warranty."
         }
       },
       {
@@ -223,7 +223,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
         "name": "How long does waterproofing repair take?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Most shower and bathroom leak repairs are completed in a single day. Sydney Seal offers same-day service for urgent repairs. The waterproofing cures within 24-48 hours, and your shower can typically be used again the following day. Larger projects like balcony waterproofing may take 2-3 days depending on size and condition."
+          "text": "Most shower and bathroom leak repairs are completed in a single day. Sydney Sealed offers same-day service for urgent repairs. The waterproofing cures within 24-48 hours, and your shower can typically be used again the following day. Larger projects like balcony waterproofing may take 2-3 days depending on size and condition."
         }
       },
       {
@@ -231,7 +231,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
         "name": "What areas in Sydney do you service?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sydney Seal services all of Greater Sydney including Eastern Suburbs, North Shore, Inner West, Northern Beaches, Hills District, Sutherland Shire, Western Sydney, Parramatta, Blacktown, Penrith, Liverpool, Campbelltown, and surrounding areas. We offer same-day emergency service across all Sydney suburbs."
+          "text": "Sydney Sealed services all of Greater Sydney including Eastern Suburbs, North Shore, Inner West, Northern Beaches, Hills District, Sutherland Shire, Western Sydney, Parramatta, Blacktown, Penrith, Liverpool, Campbelltown, and surrounding areas. We offer same-day emergency service across all Sydney suburbs."
         }
       },
       {
@@ -239,7 +239,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
         "name": "What warranty do you offer on waterproofing work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sydney Seal provides a comprehensive 5-year warranty on all waterproofing repairs and restoration work. All our work is AS3740 certified and meets Australian Standards for waterproofing wet areas. We also offer annual maintenance programs to ensure long-lasting protection for your investment."
+          "text": "Sydney Sealed provides a comprehensive 5-year warranty on all waterproofing repairs and restoration work. All our work is AS3740 certified and meets Australian Standards for waterproofing wet areas. We also offer annual maintenance programs to ensure long-lasting protection for your investment."
         }
       },
       {
@@ -247,7 +247,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
         "name": "What is silver-ion antimicrobial technology?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Silver-ion antimicrobial technology uses embedded silver nanoparticles that provide continuous protection against mould, mildew, and bacteria. Sydney Seal applies this technology during waterproofing and regrouting to create surfaces that resist microbial growth permanently. This is especially beneficial for wet areas prone to mould in Sydney's humid climate."
+          "text": "Silver-ion antimicrobial technology uses embedded silver nanoparticles that provide continuous protection against mould, mildew, and bacteria. Sydney Sealed applies this technology during waterproofing and regrouting to create surfaces that resist microbial growth permanently. This is especially beneficial for wet areas prone to mould in Sydney's humid climate."
         }
       }
     ]
@@ -257,11 +257,11 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Sydney Seal",
-    "url": "https://sydneyseal.com.au",
+    "name": "Sydney Sealed",
+    "url": "https://sydneysealed.com.au",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://sydneyseal.com.au/search?q={search_term_string}",
+      "target": "https://sydneysealed.com.au/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -275,13 +275,13 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://sydneyseal.com.au"
+        "item": "https://sydneysealed.com.au"
       },
       ...(page !== 'home' ? [{
         "@type": "ListItem",
         "position": 2,
         "name": page.charAt(0).toUpperCase() + page.slice(1),
-        "item": `https://sydneyseal.com.au/${page}`
+        "item": `https://sydneysealed.com.au/${page}`
       }] : [])
     ]
   };

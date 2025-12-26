@@ -15,13 +15,13 @@ const Footer = () => {
                 <span className="text-white font-bold text-sm">SS</span>
               </div>
               <div>
-                <h3 className="font-bold text-lg">Sydney Seal</h3>
+                <h3 className="font-bold text-lg">Sydney Sealed</h3>
                 <p className="text-gray-400 text-sm">Licensed Waterproofing Specialists</p>
               </div>
             </div>
             <p className="text-gray-400 mb-4">
               Sydney's trusted experts in shower leak repair, balcony waterproofing and bathroom restoration. 
-              AS3740 certified with 10-year warranty on all work.
+              AS3740 certified with 5-year warranty on all work.
             </p>
             <div className="flex items-center space-x-4 mb-4">
               <div className="flex items-center space-x-1 text-green-400">
@@ -70,15 +70,15 @@ const Footer = () => {
           
           {/* Contact */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Contact Sydney Seal</h4>
+            <h4 className="font-bold text-lg mb-4">Contact Sydney Sealed</h4>
             <address className="space-y-3 not-italic">
               <a 
-                href="tel:0411563444" 
+                href="tel:0421043444" 
                 className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
-                aria-label="Call Sydney Seal"
+                aria-label="Call Sydney Sealed"
               >
                 <Phone className="w-4 h-4 text-blue-400" />
-                <span>0411 563 444</span>
+                <span>0421 043 444</span>
               </a>
               <a 
                 href="mailto:info@sydneysealgrout.com.au" 
@@ -106,7 +106,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              © {currentYear} Sydney Seal. All rights reserved. | Licensed & Insured | AS3740 Certified | 10-Year Warranty
+              © {currentYear} Sydney Sealed. All rights reserved. | Licensed & Insured | AS3740 Certified | 5-Year Warranty
             </p>
             <nav aria-label="Legal" className="flex gap-4 text-sm text-gray-400">
               <Link to="/about" className="hover:text-white transition-colors">About Us</Link>

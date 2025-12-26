@@ -40,8 +40,8 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>About Sydney Seal | Professional Waterproofing Experts Sydney</title>
-        <meta name="description" content="Learn about Sydney Seal - Sydney's trusted waterproofing and leak repair specialists. Over 1000+ successful projects, 5 year warranty, and a commitment to excellence." />
+        <title>About Sydney Sealed | Professional Waterproofing Experts Sydney</title>
+        <meta name="description" content="Learn about Sydney Sealed - Sydney's trusted waterproofing and leak repair specialists. Over 1000+ successful projects, 5 year warranty, and a commitment to excellence." />
         <link rel="canonical" href="https://yourdomain.com/about" />
       </Helmet>
       
@@ -74,7 +74,7 @@ const About = () => {
                 Our Mission
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                At Sydney Seal, we believe every home deserves professional-grade waterproofing protection. Our mission is to deliver lasting solutions that protect your most valuable investment - your home.
+                At Sydney Sealed, we believe every home deserves professional-grade waterproofing protection. Our mission is to deliver lasting solutions that protect your most valuable investment - your home.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
                 We combine traditional craftsmanship with modern technology, including antimicrobial treatments that prevent mould and bacteria growth for years to come.

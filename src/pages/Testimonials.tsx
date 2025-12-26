@@ -91,8 +91,8 @@ const Testimonials = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Customer Reviews | Sydney Seal Testimonials</title>
-        <meta name="description" content="Read what our customers say about Sydney Seal's waterproofing services. Over 1000+ 5-star reviews from satisfied Sydney homeowners." />
+        <title>Customer Reviews | Sydney Sealed Testimonials</title>
+        <meta name="description" content="Read what our customers say about Sydney Sealed's waterproofing services. Over 1000+ 5-star reviews from satisfied Sydney homeowners." />
         <link rel="canonical" href="https://yourdomain.com/testimonials" />
       </Helmet>
       
@@ -178,7 +178,7 @@ const Testimonials = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-foreground mb-4">Ready to Join Our Happy Customers?</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Experience the Sydney Seal difference. Get a free quote today and see why we have hundreds of 5-star reviews.
+              Experience the Sydney Sealed difference. Get a free quote today and see why we have hundreds of 5-star reviews.
             </p>
             <Button size="lg" asChild>
               <a href="/contact">Get Your Free Quote</a>
