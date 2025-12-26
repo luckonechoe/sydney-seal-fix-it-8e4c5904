@@ -11,7 +11,7 @@ const ShowerReTile = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Shower Re-Tile Sydney - Permanent Shower Rip-Out & Reconstruction | Sydney Seal</title>
-        <meta name="description" content="Stop shower leaks permanently with our full rip-out and re-tile service in Sydney. Complete demolition, compliant waterproofing, epoxy grout finish. 2-day job, 5-year warranty. Call 0412 345 678" />
+        <meta name="description" content="Stop shower leaks permanently with our full rip-out and re-tile service in Sydney. Complete demolition, compliant waterproofing, epoxy grout finish. 2-day job, 5-year warranty. Call 0411 563 444" />
         <meta name="keywords" content="shower re-tile Sydney, shower rip-out Sydney, shower reconstruction, shower waterproofing membrane, epoxy grout shower, permanent shower repair Sydney, shower floor replacement Sydney" />
         <link rel="canonical" href="https://yourdomain.com/shower-re-tile" />
       </Helmet>
@@ -31,7 +31,7 @@ const ShowerReTile = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-6">
                 <Phone className="w-5 h-5 mr-2" />
-                Call 0412 345 678 Now
+                Call 0411 563 444 Now
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6">
                 Book Your Comprehensive Shower Assessment
@@ -386,7 +386,7 @@ const ShowerReTile = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
                 <Phone className="w-5 h-5 mr-2" />
-                Call 0412 345 678 Now
+                Call 0411 563 444 Now
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary">
                 Request Your Free Quote

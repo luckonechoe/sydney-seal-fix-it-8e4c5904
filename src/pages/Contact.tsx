@@ -122,7 +122,7 @@ const Contact = () => {
                         <Phone className="w-5 h-5 text-secondary-foreground" />
                       </div>
                       <div>
-                        <p className="font-semibold text-foreground">0412 345 678</p>
+                        <p className="font-semibold text-foreground">0411 563 444</p>
                         <p className="text-sm text-muted-foreground">Available 7 days a week</p>
                       </div>
                     </div>

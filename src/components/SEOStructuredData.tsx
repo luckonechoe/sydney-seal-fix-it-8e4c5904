@@ -16,7 +16,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
     "alternateName": "Sydney Seal Waterproofing",
     "description": "Sydney's trusted waterproofing and leak repair specialists. Licensed professionals providing shower leak repair, balcony waterproofing, and bathroom restoration with 5-year warranty. AS3740 certified, same-day emergency service across all Sydney suburbs.",
     "url": "https://sydneyseal.com.au",
-    "telephone": "+61412345678",
+    "telephone": "+61411563444",
     "email": "info@sydneysealgrout.com.au",
     "image": "https://sydneyseal.com.au/og-image.jpg",
     "logo": "https://sydneyseal.com.au/logo.png",
@@ -176,7 +176,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
     "provider": {
       "@type": "LocalBusiness",
       "name": "Sydney Seal",
-      "telephone": "+61412345678"
+      "telephone": "+61411563444"
     },
     "areaServed": {
       "@type": "City",

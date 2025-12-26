@@ -96,10 +96,10 @@ const TrustBadges = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <button 
-                onClick={() => window.location.href = 'tel:0412345678'}
+                onClick={() => window.location.href = 'tel:0411563444'}
                 className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold touch-manipulation min-h-[48px] hover:bg-primary/90 transition-colors"
               >
-                Call Now: 0412 345 678
+                Call Now: 0411 563 444
               </button>
               <button className="border border-primary text-primary px-6 py-3 rounded-lg font-semibold touch-manipulation min-h-[48px] hover:bg-primary/5 transition-colors">
                 Request Free Quote
