@@ -166,9 +166,9 @@ const FAQ = () => {
                 <a href="/contact">Get a Free Quote</a>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="tel:0412345678" className="flex items-center gap-2">
+                <a href="tel:0411563444" className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
-                  Call 0412 345 678
+                  Call 0411 563 444
                 </a>
               </Button>
             </div>

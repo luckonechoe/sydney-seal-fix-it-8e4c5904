@@ -96,10 +96,10 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 touch-manipulation min-h-[48px] font-semibold"
-                onClick={() => window.location.href = 'tel:0412345678'}
+                onClick={() => window.location.href = 'tel:0411563444'}
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                Call 0412 345 678
+                Call 0411 563 444
               </Button>
               <Button 
                 variant="outline" 

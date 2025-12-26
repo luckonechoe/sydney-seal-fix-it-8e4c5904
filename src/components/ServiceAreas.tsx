@@ -116,11 +116,11 @@ const ServiceAreas = () => {
                 <p className="text-gray-700">
                   <strong>Don't see your suburb?</strong> We travel throughout Greater Sydney – 
                   <a 
-                    href="tel:0412345678" 
+                    href="tel:0411563444" 
                     className="text-primary font-semibold hover:underline ml-1"
                     aria-label="Call us to confirm service availability in your area"
                   >
-                    call 0412 345 678
+                    call 0411 563 444
                   </a> to confirm service availability
                 </p>
               </div>

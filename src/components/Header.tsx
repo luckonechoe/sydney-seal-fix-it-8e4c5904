@@ -10,7 +10,7 @@ const Header = () => {
 
   const handlePhoneClick = () => {
     trackCall('header');
-    window.location.href = 'tel:0412345678';
+    window.location.href = 'tel:0411563444';
     setIsMenuOpen(false);
   };
 
@@ -69,7 +69,7 @@ const Header = () => {
               className="flex items-center space-x-2 text-gray-400 hover:text-primary transition-colors touch-manipulation"
             >
               <Phone className="w-4 h-4" />
-              <span className="font-semibold">0412 345 678</span>
+              <span className="font-semibold">0411 563 444</span>
             </button>
             <Button onClick={handleQuoteClick} className="touch-manipulation">
               Get Free Quote

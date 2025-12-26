@@ -11,7 +11,7 @@ const BathroomKitchenRestoration = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Bathroom & Kitchen Restoration Sydney - Tile, Grout & Waterproofing Experts</title>
-        <meta name="description" content="Complete bathroom and kitchen restoration services in Sydney. Tile restoration, antimicrobial grout renewal, waterproofing & mould treatment. 5-year warranty. Free consultation - call 0412 345 678" />
+        <meta name="description" content="Complete bathroom and kitchen restoration services in Sydney. Tile restoration, antimicrobial grout renewal, waterproofing & mould treatment. 5-year warranty. Free consultation - call 0411 563 444" />
         <meta name="keywords" content="bathroom restoration Sydney, kitchen restoration Sydney, tile restoration, grout renewal Sydney, waterproofing Sydney, antimicrobial bathroom treatment, kitchen splashback repair Sydney" />
         <link rel="canonical" href="https://yourdomain.com/bathroom-kitchen-restoration" />
       </Helmet>
@@ -32,7 +32,7 @@ const BathroomKitchenRestoration = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
                 <Phone className="w-5 h-5 mr-2" />
-                Call 0412 345 678
+                Call 0411 563 444
               </Button>
               <Button variant="outline" size="lg">
                 Get Free Consultation

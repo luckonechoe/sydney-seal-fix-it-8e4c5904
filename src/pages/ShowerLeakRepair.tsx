@@ -11,7 +11,7 @@ const ShowerLeakRepair = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Shower Leak Repair Sydney - Expert Leaking Shower Repairs | Sydney Seal</title>
-        <meta name="description" content="Stop shower leaks fast! Professional shower leak detection and repair in Sydney. Advanced antimicrobial waterproofing, 5-year warranty. Same-day emergency service available. Call 0412 345 678" />
+        <meta name="description" content="Stop shower leaks fast! Professional shower leak detection and repair in Sydney. Advanced antimicrobial waterproofing, 5-year warranty. Same-day emergency service available. Call 0411 563 444" />
         <meta name="keywords" content="shower leak repair Sydney, leaking shower repair, shower waterproofing Sydney, bathroom leak detection, shower grout repair Sydney, antimicrobial waterproofing, emergency shower repairs Sydney" />
         <link rel="canonical" href="https://yourdomain.com/shower-leak-repair" />
       </Helmet>
@@ -35,7 +35,7 @@ const ShowerLeakRepair = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-6">
                 <Phone className="w-5 h-5 mr-2" />
-                Call 0412 345 678 Now
+                Call 0411 563 444 Now
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6">
                 Book Free Shower Leak Inspection
@@ -270,7 +270,7 @@ const ShowerLeakRepair = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
                 <Phone className="w-5 h-5 mr-2" />
-                Call 0412 345 678 Now
+                Call 0411 563 444 Now
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary">
                 Schedule Free Inspection

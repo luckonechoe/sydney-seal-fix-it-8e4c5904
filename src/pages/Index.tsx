@@ -73,7 +73,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Sydney Seal | Shower Leak Repair & Waterproofing Experts Sydney | 5-Year Warranty</title>
-        <meta name="description" content="Sydney's #1 waterproofing specialists. Expert shower leak repair without tile removal, balcony waterproofing & bathroom restoration. AS3740 certified, licensed professionals with 5-year warranty. Same-day emergency service across Eastern Suburbs, North Shore, Inner West, Parramatta & all Sydney suburbs. Silver-ion antimicrobial technology. Call 0412 345 678 for free assessment." />
+        <meta name="description" content="Sydney's #1 waterproofing specialists. Expert shower leak repair without tile removal, balcony waterproofing & bathroom restoration. AS3740 certified, licensed professionals with 5-year warranty. Same-day emergency service across Eastern Suburbs, North Shore, Inner West, Parramatta & all Sydney suburbs. Silver-ion antimicrobial technology. Call 0411 563 444 for free assessment." />
         <meta name="keywords" content="shower leak repair Sydney, waterproofing Sydney, balcony leak repair, bathroom waterproofing, grout sealing Sydney, waterproof shower without removing tiles, leak repair Eastern Suburbs, waterproofing North Shore Sydney, bathroom restoration Inner West, AS3740 certified waterproofing, antimicrobial grout sealing, mould resistant bathroom Sydney, emergency leak repair Sydney, commercial waterproofing Sydney, strata waterproofing services" />
         <link rel="canonical" href="https://sydneyseal.com.au/" />
         

@@ -73,12 +73,12 @@ const Footer = () => {
             <h4 className="font-bold text-lg mb-4">Contact Sydney Seal</h4>
             <address className="space-y-3 not-italic">
               <a 
-                href="tel:0412345678" 
+                href="tel:0411563444" 
                 className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
                 aria-label="Call Sydney Seal"
               >
                 <Phone className="w-4 h-4 text-blue-400" />
-                <span>0412 345 678</span>
+                <span>0411 563 444</span>
               </a>
               <a 
                 href="mailto:info@sydneysealgrout.com.au" 
