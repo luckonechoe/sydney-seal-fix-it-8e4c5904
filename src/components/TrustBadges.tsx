@@ -11,8 +11,8 @@ const TrustBadges = () => {
     },
     {
       icon: Award,
-      title: "Antimicrobial Protection",
-      description: "Nanoparticle technology prevents mould & bacteria",
+      title: "Antimicrobial Grout Protection",
+      description: "Silver ion epoxy grout prevents mould & mildew growth",
       color: "text-blue-600",
       bg: "bg-blue-50"
     },
