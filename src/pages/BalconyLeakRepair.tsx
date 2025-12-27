@@ -11,7 +11,7 @@ const BalconyLeakRepair = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Balcony Leak Repair Sydney - Expert Balcony Waterproofing & Restoration</title>
-        <meta name="description" content="Stop balcony leaks permanently! Professional balcony waterproofing and leak repair across Sydney. Advanced detection, lifetime warranty, same-day service. Call 0411 563 444 for free assessment." />
+        <meta name="description" content="Stop balcony leaks permanently! Professional balcony waterproofing and leak repair across Sydney. Advanced detection, lifetime warranty, same-day service. Call 0421 043 444 for free assessment." />
         <meta name="keywords" content="balcony leak repair Sydney, balcony waterproofing Sydney, balcony restoration, deck waterproofing Sydney, outdoor leak repair, balcony membrane repair Sydney" />
         <link rel="canonical" href="https://yourdomain.com/balcony-leak-repair" />
       </Helmet>
@@ -35,7 +35,7 @@ const BalconyLeakRepair = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-6">
                 <Phone className="w-5 h-5 mr-2" />
-                Call 0411 563 444 Now
+                Call 0421 043 444 Now
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6">
                 Get Free Balcony Inspection
@@ -312,7 +312,7 @@ const BalconyLeakRepair = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
                 <Phone className="w-5 h-5 mr-2" />
-                Call 0411 563 444 Now
+                Call 0421 043 444 Now
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary">
                 Book Free Inspection
