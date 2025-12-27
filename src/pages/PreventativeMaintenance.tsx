@@ -12,7 +12,7 @@ const PreventativeMaintenance = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Preventative Leak Maintenance Sydney - Stop Leaks Before They Start</title>
-        <meta name="description" content="Proactive waterproofing maintenance for Sydney properties. Prevent costly leak damage with regular inspections and antimicrobial treatments. Save up to 70% on repairs. Call 0411 563 444" />
+        <meta name="description" content="Proactive waterproofing maintenance for Sydney properties. Prevent costly leak damage with regular inspections and antimicrobial treatments. Save up to 70% on repairs. Call 0421 043 444" />
         <meta name="keywords" content="preventative maintenance Sydney, leak prevention Sydney, waterproofing maintenance, proactive leak repair Sydney, building maintenance Sydney, grout maintenance Sydney" />
         <link rel="canonical" href="https://yourdomain.com/preventative-maintenance" />
       </Helmet>
@@ -37,7 +37,7 @@ const PreventativeMaintenance = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-6">
                 <Phone className="w-5 h-5 mr-2" />
-                Call 0411 563 444 Now
+                Call 0421 043 444 Now
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6">
                 View Maintenance Plans

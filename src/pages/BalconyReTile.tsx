@@ -11,7 +11,7 @@ const BalconyReTile = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Balcony Re-Tile Sydney - Full Strip-Out & Structural Waterproofing | Sydney Seal</title>
-        <meta name="description" content="Protect your balcony from structural damage with our full strip-out and re-tile service in Sydney. Slab inspection, falls correction, external-grade waterproofing. 5-year warranty. Call 0411 563 444" />
+        <meta name="description" content="Protect your balcony from structural damage with our full strip-out and re-tile service in Sydney. Slab inspection, falls correction, external-grade waterproofing. 5-year warranty. Call 0421 043 444" />
         <meta name="keywords" content="balcony re-tile Sydney, balcony rip-out Sydney, balcony waterproofing membrane, concrete spalling repair, balcony structural repair Sydney, external waterproofing Sydney" />
         <link rel="canonical" href="https://yourdomain.com/balcony-re-tile" />
       </Helmet>
@@ -35,7 +35,7 @@ const BalconyReTile = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-6">
                 <Phone className="w-5 h-5 mr-2" />
-                Call 0411 563 444 Now
+                Call 0421 043 444 Now
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6">
                 Request Structural Balcony Assessment
