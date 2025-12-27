@@ -14,6 +14,7 @@ import SilverIonTechnology from "./pages/SilverIonTechnology";
 import PreventativeMaintenance from "./pages/PreventativeMaintenance";
 import CommercialWaterproofing from "./pages/CommercialWaterproofing";
 import CompleteReconstruction from "./pages/CompleteReconstruction";
+import EpoxyGroutLeakRepair from "./pages/EpoxyGroutLeakRepair";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
@@ -43,6 +44,7 @@ const AppContent = () => {
         <Route path="/preventative-maintenance" element={<PreventativeMaintenance />} />
         <Route path="/commercial-waterproofing" element={<CommercialWaterproofing />} />
         <Route path="/complete-reconstruction" element={<CompleteReconstruction />} />
+        <Route path="/epoxy-grout-leak-repair" element={<EpoxyGroutLeakRepair />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/faq" element={<FAQ />} />

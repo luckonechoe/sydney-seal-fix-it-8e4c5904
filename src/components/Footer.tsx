@@ -49,6 +49,7 @@ const Footer = () => {
               <li><Link to="/bathroom-kitchen-restoration" className="hover:text-white transition-colors">Bathroom Restoration</Link></li>
               <li><Link to="/commercial-waterproofing" className="hover:text-white transition-colors">Commercial Waterproofing</Link></li>
               <li><Link to="/preventative-maintenance" className="hover:text-white transition-colors">Preventative Maintenance</Link></li>
+              <li><Link to="/epoxy-grout-leak-repair" className="hover:text-white transition-colors">Epoxy Grout Leak Repair</Link></li>
               <li><Link to="/silver-ion-technology" className="hover:text-white transition-colors">Silver-Ion Technology</Link></li>
             </ul>
           </nav>
