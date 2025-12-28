@@ -2,13 +2,28 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { CheckCircle, Phone, MapPin, Shield, Clock, Award, Zap, Upload, X } from 'lucide-react';
+import { CheckCircle, Phone, MapPin, Shield, Clock, Award, Zap, Upload, X, Loader2 } from 'lucide-react';
 import { useFormTracking } from '../hooks/useAnalytics';
 import { useState } from 'react';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
 
 const Hero = () => {
   const { trackForm } = useFormTracking();
+  const { toast } = useToast();
   const [uploadedFiles, setUploadedFiles] = useState<File[]>([]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    message: '',
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(e.target.files || []);
@@ -19,11 +34,57 @@ const Hero = () => {
     setUploadedFiles(prev => prev.filter((_, i) => i !== index));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    trackForm('hero-contact', { type: 'quote-request' });
-    console.log('Uploaded files:', uploadedFiles);
-    setUploadedFiles([]);
+    setIsSubmitting(true);
+
+    try {
+      // Save to database
+      const { error: dbError } = await supabase
+        .from('quote_requests')
+        .insert({
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email || null,
+          message: formData.message || null,
+        });
+
+      if (dbError) {
+        console.error('Database error:', dbError);
+        throw new Error('Failed to save your request');
+      }
+
+      // Send email notification
+      const { error: emailError } = await supabase.functions.invoke('send-quote-notification', {
+        body: {
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          message: formData.message,
+        },
+      });
+
+      if (emailError) {
+        console.error('Email error:', emailError);
+      }
+
+      trackForm('hero-contact', { type: 'quote-request' });
+      toast({
+        title: "Thank you!",
+        description: "We'll contact you within 24 hours.",
+      });
+      setFormData({ name: '', phone: '', email: '', message: '' });
+      setUploadedFiles([]);
+    } catch (error: any) {
+      console.error('Form submission error:', error);
+      toast({
+        title: "Error",
+        description: error.message || "Something went wrong. Please try again or call us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleQuoteClick = () => {
@@ -152,23 +213,35 @@ const Hero = () => {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <Input
                   type="text"
+                  name="name"
                   placeholder="Your Name"
+                  value={formData.name}
+                  onChange={handleInputChange}
                   className="touch-manipulation min-h-[48px] text-base"
                   required
                 />
                 <Input
                   type="tel"
+                  name="phone"
                   placeholder="Phone Number"
+                  value={formData.phone}
+                  onChange={handleInputChange}
                   className="touch-manipulation min-h-[48px] text-base"
                   required
                 />
                 <Input
                   type="email"
+                  name="email"
                   placeholder="Email Address"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   className="touch-manipulation min-h-[48px] text-base"
                 />
                 <textarea
+                  name="message"
                   placeholder="Describe your leak or restoration needs..."
+                  value={formData.message}
+                  onChange={handleInputChange}
                   rows={4}
                   className="w-full px-3 py-3 border border-input bg-background rounded-md focus:ring-2 focus:ring-ring focus:border-transparent touch-manipulation text-base resize-none"
                 ></textarea>
@@ -221,8 +294,16 @@ const Hero = () => {
                 <Button 
                   type="submit"
                   className="w-full text-base sm:text-lg py-3 sm:py-4 touch-manipulation min-h-[48px] font-semibold"
+                  disabled={isSubmitting}
                 >
-                  Get Free Assessment
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Submitting...
+                    </>
+                  ) : (
+                    'Get Free Assessment'
+                  )}
                 </Button>
               </form>
             </Card>
