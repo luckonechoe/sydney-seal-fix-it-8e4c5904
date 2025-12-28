@@ -110,7 +110,7 @@ const ServiceAreas = () => {
                 From the <strong>Eastern Suburbs</strong> to <strong>Western Sydney</strong>, 
                 <strong> North Shore</strong> to <strong>Sutherland Shire</strong> – our licensed 
                 waterproofing specialists provide AS3740 certified shower leak repair, balcony 
-                waterproofing, and bathroom restoration services with a 10-year warranty.
+                waterproofing, and bathroom restoration services with a 5-year warranty.
               </p>
               <div className="bg-blue-50 p-4 rounded-lg inline-block">
                 <p className="text-gray-700">
