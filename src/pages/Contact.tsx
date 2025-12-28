@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Upload, ImageIcon, X, CheckCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Upload, ImageIcon, X, CheckCircle, Loader2 } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -26,6 +27,7 @@ const Contact = () => {
     message: '',
   });
   const [uploadedFiles, setUploadedFiles] = useState<File[]>([]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -47,14 +49,59 @@ const Contact = () => {
     setUploadedFiles(prev => prev.filter((_, i) => i !== index));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Thank you!",
-      description: "We'll contact you within 24 hours.",
-    });
-    setFormData({ name: '', email: '', phone: '', service: '', message: '' });
-    setUploadedFiles([]);
+    setIsSubmitting(true);
+
+    try {
+      // Save to database
+      const { error: dbError } = await supabase
+        .from('quote_requests')
+        .insert({
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email || null,
+          service: formData.service || null,
+          message: formData.message || null,
+        });
+
+      if (dbError) {
+        console.error('Database error:', dbError);
+        throw new Error('Failed to save your request');
+      }
+
+      // Send email notification
+      const { error: emailError } = await supabase.functions.invoke('send-quote-notification', {
+        body: {
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          service: formData.service,
+          message: formData.message,
+        },
+      });
+
+      if (emailError) {
+        console.error('Email error:', emailError);
+        // Don't throw - the form was saved successfully
+      }
+
+      toast({
+        title: "Thank you!",
+        description: "We'll contact you within 24 hours.",
+      });
+      setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+      setUploadedFiles([]);
+    } catch (error: any) {
+      console.error('Form submission error:', error);
+      toast({
+        title: "Error",
+        description: error.message || "Something went wrong. Please try again or call us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const processSteps = [
@@ -320,8 +367,15 @@ const Contact = () => {
                       )}
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full">
-                      Submit Request
+                    <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                          Submitting...
+                        </>
+                      ) : (
+                        'Submit Request'
+                      )}
                     </Button>
 
                     <p className="text-xs text-muted-foreground text-center">
