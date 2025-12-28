@@ -78,7 +78,7 @@ const Hero = () => {
             
             <p className="text-base sm:text-lg lg:text-xl text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
               Professional waterproofing solutions for showers, balconies, and bathrooms across Sydney. 
-              AS3740 certified, 10-year warranty, same-day emergency service. No tile removal required.
+              AS3740 certified, 5-year warranty, same-day emergency service. No tile removal required.
             </p>
 
             <div className="bg-blue-50 border-l-4 border-primary p-3 sm:p-4 mb-6 sm:mb-8 rounded-r-lg">
@@ -139,8 +139,8 @@ const Hero = () => {
                 <div className="text-sm sm:text-base text-muted-foreground">Response Time</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold text-primary mb-1">10yr</div>
-                <div className="text-sm sm:text-base text-muted-foreground">Warranty</div>
+              <div className="text-3xl sm:text-4xl font-bold text-primary mb-1">5yr</div>
+              <div className="text-sm sm:text-base text-muted-foreground">Warranty</div>
               </div>
             </div>
           </article>
