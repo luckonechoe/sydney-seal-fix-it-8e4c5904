@@ -8,6 +8,12 @@ import { useState } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
 
+// Validation helper functions
+const validateName = (name: string): boolean => name.trim().length >= 1 && name.length <= 100;
+const validatePhone = (phone: string): boolean => /^[0-9\s\-\+\(\)]{6,20}$/.test(phone);
+const validateEmail = (email: string): boolean => !email || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+const validateMessage = (message: string): boolean => !message || message.length <= 2000;
+
 const Contact = () => {
   const { trackForm } = useFormTracking();
   const { toast } = useToast();
@@ -38,34 +44,80 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Client-side validation
+    if (!validateName(formData.name)) {
+      toast({
+        title: "Invalid Name",
+        description: "Please enter a valid name (1-100 characters).",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    if (!validatePhone(formData.phone)) {
+      toast({
+        title: "Invalid Phone",
+        description: "Please enter a valid phone number.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    if (!validateEmail(formData.email)) {
+      toast({
+        title: "Invalid Email",
+        description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    if (!validateMessage(formData.message)) {
+      toast({
+        title: "Message Too Long",
+        description: "Please keep your message under 2000 characters.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       // Save to database
       const { error: dbError } = await supabase
         .from('quote_requests')
         .insert({
-          name: formData.name,
-          phone: formData.phone,
-          email: formData.email || null,
-          message: formData.message || null,
+          name: formData.name.trim(),
+          phone: formData.phone.trim(),
+          email: formData.email.trim() || null,
+          message: formData.message.trim() || null,
         });
 
       if (dbError) {
-        console.error('Database error:', dbError);
+        if (import.meta.env.DEV) {
+          console.error('Database error:', dbError);
+        }
         throw new Error('Failed to save your request');
       }
 
       // Send email notification
       const { error: emailError } = await supabase.functions.invoke('send-quote-notification', {
         body: {
-          name: formData.name,
-          phone: formData.phone,
-          email: formData.email,
-          message: formData.message,
+          name: formData.name.trim(),
+          phone: formData.phone.trim(),
+          email: formData.email.trim(),
+          message: formData.message.trim(),
         },
       });
 
       if (emailError) {
-        console.error('Email error:', emailError);
+        if (import.meta.env.DEV) {
+          console.error('Email error:', emailError);
+        }
+        // Don't throw - form was saved successfully
       }
 
       trackForm('contact_form', { type: 'quote-request' });
@@ -75,11 +127,13 @@ const Contact = () => {
       });
       setFormData({ name: '', phone: '', email: '', message: '' });
       setUploadedFiles([]);
-    } catch (error: any) {
-      console.error('Form submission error:', error);
+    } catch (error) {
+      if (import.meta.env.DEV) {
+        console.error('Form submission error:', error);
+      }
       toast({
         title: "Error",
-        description: error.message || "Something went wrong. Please try again or call us directly.",
+        description: "Something went wrong. Please try again or call us directly.",
         variant: "destructive",
       });
     } finally {
@@ -153,6 +207,7 @@ const Contact = () => {
                 onChange={handleInputChange}
                 className="touch-manipulation min-h-[48px] text-base"
                 required
+                maxLength={100}
               />
               <Input
                 type="tel"
@@ -162,6 +217,7 @@ const Contact = () => {
                 onChange={handleInputChange}
                 className="touch-manipulation min-h-[48px] text-base"
                 required
+                maxLength={20}
               />
               <Input
                 type="email"
@@ -170,6 +226,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleInputChange}
                 className="touch-manipulation min-h-[48px] text-base"
+                maxLength={255}
               />
               <textarea
                 name="message"
@@ -177,6 +234,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleInputChange}
                 rows={4}
+                maxLength={2000}
                 className="w-full px-3 py-3 border border-input bg-background rounded-md focus:ring-2 focus:ring-ring focus:border-transparent touch-manipulation text-base resize-none"
               ></textarea>
               
