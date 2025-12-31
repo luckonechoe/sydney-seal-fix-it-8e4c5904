@@ -17,6 +17,13 @@ import { useToast } from '@/hooks/use-toast';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
+// Validation helper functions
+const validateName = (name: string): boolean => name.trim().length >= 1 && name.length <= 100;
+const validatePhone = (phone: string): boolean => /^[0-9\s\-\+\(\)]{6,20}$/.test(phone);
+const validateEmail = (email: string): boolean => !email || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+const validateMessage = (message: string): boolean => !message || message.length <= 2000;
+const validateService = (service: string): boolean => !service || service.length <= 100;
+
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -53,36 +60,91 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Client-side validation
+    if (!validateName(formData.name)) {
+      toast({
+        title: "Invalid Name",
+        description: "Please enter a valid name (1-100 characters).",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    if (!validatePhone(formData.phone)) {
+      toast({
+        title: "Invalid Phone",
+        description: "Please enter a valid phone number.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    if (!validateEmail(formData.email)) {
+      toast({
+        title: "Invalid Email",
+        description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    if (!validateService(formData.service)) {
+      toast({
+        title: "Invalid Service",
+        description: "Service selection is too long.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    if (!validateMessage(formData.message)) {
+      toast({
+        title: "Message Too Long",
+        description: "Please keep your message under 2000 characters.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       // Save to database
       const { error: dbError } = await supabase
         .from('quote_requests')
         .insert({
-          name: formData.name,
-          phone: formData.phone,
-          email: formData.email || null,
+          name: formData.name.trim(),
+          phone: formData.phone.trim(),
+          email: formData.email.trim() || null,
           service: formData.service || null,
-          message: formData.message || null,
+          message: formData.message.trim() || null,
         });
 
       if (dbError) {
-        console.error('Database error:', dbError);
+        if (import.meta.env.DEV) {
+          console.error('Database error:', dbError);
+        }
         throw new Error('Failed to save your request');
       }
 
       // Send email notification
       const { error: emailError } = await supabase.functions.invoke('send-quote-notification', {
         body: {
-          name: formData.name,
-          phone: formData.phone,
-          email: formData.email,
+          name: formData.name.trim(),
+          phone: formData.phone.trim(),
+          email: formData.email.trim(),
           service: formData.service,
-          message: formData.message,
+          message: formData.message.trim(),
         },
       });
 
       if (emailError) {
-        console.error('Email error:', emailError);
+        if (import.meta.env.DEV) {
+          console.error('Email error:', emailError);
+        }
         // Don't throw - the form was saved successfully
       }
 
@@ -92,11 +154,13 @@ const Contact = () => {
       });
       setFormData({ name: '', email: '', phone: '', service: '', message: '' });
       setUploadedFiles([]);
-    } catch (error: any) {
-      console.error('Form submission error:', error);
+    } catch (error) {
+      if (import.meta.env.DEV) {
+        console.error('Form submission error:', error);
+      }
       toast({
         title: "Error",
-        description: error.message || "Something went wrong. Please try again or call us directly.",
+        description: "Something went wrong. Please try again or call us directly.",
         variant: "destructive",
       });
     } finally {
@@ -262,6 +326,7 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleInputChange}
                         placeholder="Your full name"
+                        maxLength={100}
                       />
                     </div>
 
@@ -275,6 +340,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         placeholder="your@email.com"
+                        maxLength={255}
                       />
                     </div>
 
@@ -288,6 +354,7 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleInputChange}
                         placeholder="0400 000 000"
+                        maxLength={20}
                       />
                     </div>
 
@@ -316,6 +383,7 @@ const Contact = () => {
                         value={formData.message}
                         onChange={handleInputChange}
                         placeholder="Tell us about your project or issue..."
+                        maxLength={2000}
                       />
                     </div>
 

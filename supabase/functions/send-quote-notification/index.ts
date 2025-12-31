@@ -9,7 +9,30 @@ const corsHeaders = {
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
 };
 
-// Input validation schema (manual implementation since we can't import zod easily)
+// Simple in-memory rate limiting (resets when function cold starts)
+// For production, consider using Redis/Upstash for persistent rate limiting
+const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
+const RATE_LIMIT_MAX = 5; // 5 requests
+const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour
+
+function checkRateLimit(identifier: string): { allowed: boolean; remaining: number } {
+  const now = Date.now();
+  const record = rateLimitMap.get(identifier);
+  
+  if (!record || now > record.resetTime) {
+    rateLimitMap.set(identifier, { count: 1, resetTime: now + RATE_LIMIT_WINDOW_MS });
+    return { allowed: true, remaining: RATE_LIMIT_MAX - 1 };
+  }
+  
+  if (record.count >= RATE_LIMIT_MAX) {
+    return { allowed: false, remaining: 0 };
+  }
+  
+  record.count++;
+  return { allowed: true, remaining: RATE_LIMIT_MAX - record.count };
+}
+
+// Input validation schema (manual implementation)
 function validateQuoteRequest(data: unknown): { 
   valid: boolean; 
   data?: QuoteRequestData; 
@@ -101,6 +124,28 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
+    // Get client IP for rate limiting
+    const clientIP = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 
+                     req.headers.get('cf-connecting-ip') || 
+                     'unknown';
+    
+    // Check rate limit
+    const rateLimit = checkRateLimit(clientIP);
+    if (!rateLimit.allowed) {
+      console.warn(`Rate limit exceeded for IP: ${clientIP}`);
+      return new Response(
+        JSON.stringify({ error: 'Too many requests. Please try again later.' }),
+        { 
+          status: 429, 
+          headers: { 
+            "Content-Type": "application/json", 
+            "Retry-After": "3600",
+            ...corsHeaders 
+          } 
+        }
+      );
+    }
+
     // Verify the request is coming from our Supabase instance
     const supabaseUrl = Deno.env.get('SUPABASE_URL');
     const supabaseAnonKey = Deno.env.get('SUPABASE_ANON_KEY');
@@ -122,9 +167,12 @@ const handler = async (req: Request): Promise<Response> => {
     const token = authHeader.replace('Bearer ', '');
     if (token !== supabaseAnonKey) {
       // For non-anon tokens, verify with Supabase
-      const { data: { user }, error: authError } = await supabase.auth.getUser();
+      const { error: authError } = await supabase.auth.getUser();
       // We don't require a user, just that the token is a valid Supabase token
       // The anon key check above handles unauthenticated but valid requests
+      if (authError) {
+        console.warn("Invalid auth token");
+      }
     }
 
     // Parse and validate input
@@ -148,7 +196,7 @@ const handler = async (req: Request): Promise<Response> => {
     }
 
     const data = validation.data;
-    console.log("Received valid quote request for:", escapeHtml(data.name));
+    console.log("Processing quote request for:", data.name.substring(0, 20));
 
     // Escape all user input for HTML
     const safeName = escapeHtml(data.name);
@@ -202,10 +250,14 @@ const handler = async (req: Request): Promise<Response> => {
 
     return new Response(JSON.stringify({ success: true }), {
       status: 200,
-      headers: { "Content-Type": "application/json", ...corsHeaders },
+      headers: { 
+        "Content-Type": "application/json", 
+        "X-RateLimit-Remaining": rateLimit.remaining.toString(),
+        ...corsHeaders 
+      },
     });
   } catch (error: unknown) {
-    console.error("Error in send-quote-notification function:", error instanceof Error ? error.message : 'Unknown error');
+    console.error("Error processing request:", error instanceof Error ? error.message : 'Unknown error');
     return new Response(
       JSON.stringify({ error: 'An error occurred processing your request' }),
       {
