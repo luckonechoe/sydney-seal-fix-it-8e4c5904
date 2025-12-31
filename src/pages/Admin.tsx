@@ -14,7 +14,7 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import { useToast } from '@/hooks/use-toast';
-import { Loader2, LogOut, RefreshCw, Mail, Phone, Calendar, MessageSquare, Briefcase, AlertCircle } from 'lucide-react';
+import { Loader2, LogOut, RefreshCw, Mail, Phone, Calendar, MessageSquare, Briefcase, AlertCircle, Radio } from 'lucide-react';
 import { format } from 'date-fns';
 
 interface QuoteRequest {
@@ -32,6 +32,7 @@ const Admin = () => {
   const [quoteRequests, setQuoteRequests] = useState<QuoteRequest[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [isLive, setIsLive] = useState(false);
   const navigate = useNavigate();
   const { toast } = useToast();
 
@@ -44,8 +45,47 @@ const Admin = () => {
   useEffect(() => {
     if (user && isAdmin) {
       fetchQuoteRequests();
+
+      // Set up real-time subscription
+      const channel = supabase
+        .channel('quote-requests-realtime')
+        .on(
+          'postgres_changes',
+          {
+            event: 'INSERT',
+            schema: 'public',
+            table: 'quote_requests'
+          },
+          (payload) => {
+            const newRequest = payload.new as QuoteRequest;
+            setQuoteRequests((prev) => [newRequest, ...prev]);
+            toast({
+              title: "New Quote Request!",
+              description: `${newRequest.name} just submitted a quote request.`,
+            });
+          }
+        )
+        .on(
+          'postgres_changes',
+          {
+            event: 'DELETE',
+            schema: 'public',
+            table: 'quote_requests'
+          },
+          (payload) => {
+            const deletedId = payload.old.id;
+            setQuoteRequests((prev) => prev.filter((r) => r.id !== deletedId));
+          }
+        )
+        .subscribe((status) => {
+          setIsLive(status === 'SUBSCRIBED');
+        });
+
+      return () => {
+        supabase.removeChannel(channel);
+      };
     }
-  }, [user, isAdmin]);
+  }, [user, isAdmin, toast]);
 
   const fetchQuoteRequests = async () => {
     try {
@@ -141,9 +181,17 @@ const Admin = () => {
       {/* Header */}
       <header className="bg-background border-b sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div>
-            <h1 className="text-xl font-bold text-foreground">Admin Dashboard</h1>
-            <p className="text-sm text-muted-foreground">{user.email}</p>
+          <div className="flex items-center gap-3">
+            <div>
+              <h1 className="text-xl font-bold text-foreground">Admin Dashboard</h1>
+              <p className="text-sm text-muted-foreground">{user.email}</p>
+            </div>
+            {isLive && (
+              <Badge variant="secondary" className="flex items-center gap-1">
+                <Radio className="h-3 w-3 text-green-500 animate-pulse" />
+                Live
+              </Badge>
+            )}
           </div>
           <div className="flex items-center gap-2">
             <Button 
