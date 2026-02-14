@@ -42,7 +42,7 @@ const CompleteReconstruction = () => {
     "Double-layer waterproofing protection",
     "Addresses both grout and membrane failures",
     "5-year warranty on workmanship and products",
-    "Licensed and AS3740 & AS4654.2 compliant",
+    "Fully licensed and Australian Standards compliant",
     "Premium anti-mold and stain-resistant materials",
     "Complete peace of mind with new waterproofing",
     "Solves severe structural water damage",

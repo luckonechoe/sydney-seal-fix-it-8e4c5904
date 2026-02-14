@@ -298,7 +298,7 @@ const Contact = () => {
                     <CheckCircle className="w-6 h-6 text-accent-foreground" />
                     <div>
                       <p className="font-semibold text-accent-foreground">Waterproofing Licence No: 482739W</p>
-                      <p className="text-sm text-accent-foreground/80">Compliance: AS3740 & AS4654.2</p>
+                      <p className="text-sm text-accent-foreground/80">Australian Standards Compliant</p>
                     </div>
                   </div>
                 </CardContent>
