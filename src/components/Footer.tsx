@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <p className="text-gray-400 mb-4">
               Sydney's trusted experts in shower leak repair, balcony waterproofing and bathroom restoration. 
-              AS3740 certified with 5-year warranty on all work.
+              Fully licensed professionals with 5-year warranty on all work.
             </p>
             <div className="flex items-center space-x-4 mb-4">
               <div className="flex items-center space-x-1 text-green-400">
@@ -30,7 +30,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-1 text-blue-400">
                 <Award className="w-4 h-4" />
-                <span className="text-sm">AS3740</span>
+                <span className="text-sm">Certified</span>
               </div>
               <div className="flex items-center space-x-1 text-orange-400">
                 <Clock className="w-4 h-4" />
@@ -107,7 +107,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              © {currentYear} Sydney Sealed. All rights reserved. | Licensed & Insured | AS3740 Certified | 5-Year Warranty
+              © {currentYear} Sydney Sealed. All rights reserved. | Licensed & Insured | Australian Standards Compliant | 5-Year Warranty
             </p>
             <nav aria-label="Legal" className="flex gap-4 text-sm text-gray-400">
               <Link to="/about" className="hover:text-white transition-colors">About Us</Link>

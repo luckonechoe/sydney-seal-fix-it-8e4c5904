@@ -14,8 +14,8 @@ const WhyChooseUs = () => {
     },
     {
       icon: <Shield className="w-8 h-8 text-blue-600" />,
-      title: "AS3740 Certified",
-      description: "Fully compliant with Australian Standards for waterproofing of wet areas in buildings"
+      title: "Australian Standards Compliant",
+      description: "Fully compliant with Australian Standards for waterproofing of wet areas in residential & commercial buildings"
     },
     {
       icon: <Wrench className="w-8 h-8 text-blue-600" />,

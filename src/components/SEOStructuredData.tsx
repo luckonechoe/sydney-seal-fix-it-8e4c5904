@@ -14,7 +14,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
     "@id": "https://sydneyseal.com.au/#business",
     "name": "Sydney Sealed",
     "alternateName": "Sydney Sealed Waterproofing",
-    "description": "Sydney's trusted waterproofing and leak repair specialists. Licensed professionals providing shower leak repair, balcony waterproofing, and bathroom restoration with 5-year warranty. AS3740 certified, same-day emergency service across all Sydney suburbs.",
+    "description": "Sydney's trusted waterproofing and leak repair specialists. Fully licensed professionals providing shower leak repair, balcony waterproofing, and bathroom restoration with 5-year warranty. Same-day emergency service across all Sydney suburbs.",
     "url": "https://sydneysealed.com.au",
     "telephone": "+61421043444",
     "email": "info@sydneysealgrout.com.au",
@@ -93,7 +93,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
           "itemOffered": {
             "@type": "Service",
             "name": "Bathroom Restoration Sydney",
-            "description": "Full bathroom waterproofing and restoration services. AS3740 certified workmanship with antimicrobial silver-ion technology."
+            "description": "Full bathroom waterproofing and restoration services. Licensed professional workmanship with antimicrobial silver-ion technology."
           }
         }
       ]
@@ -150,7 +150,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
       "Bathroom Restoration",
       "Grout Sealing",
       "Antimicrobial Treatment",
-      "AS3740 Compliance",
+      "Australian Standards Compliance",
       "Silver-Ion Technology"
     ],
     "hasCredential": [
@@ -162,7 +162,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
       {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "certification",
-        "name": "AS3740 Certified"
+        "name": "Australian Standards Certified Waterproofer"
       }
     ]
   };
@@ -239,7 +239,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
         "name": "What warranty do you offer on waterproofing work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sydney Sealed provides a comprehensive 5-year warranty on all waterproofing repairs and restoration work. All our work is AS3740 certified and meets Australian Standards for waterproofing wet areas. We also offer annual maintenance programs to ensure long-lasting protection for your investment."
+          "text": "Sydney Sealed provides a comprehensive 5-year warranty on all waterproofing repairs and restoration work. All our work meets Australian Standards for waterproofing wet areas, performed by fully licensed professionals. We also offer annual maintenance programs to ensure long-lasting protection for your investment."
         }
       },
       {

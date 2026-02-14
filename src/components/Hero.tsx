@@ -193,15 +193,15 @@ const Hero = () => {
             
             <p className="text-base sm:text-lg lg:text-xl text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
               Professional waterproofing solutions for showers, balconies, and bathrooms across Sydney. 
-              AS3740 certified, 5-year warranty, same-day emergency service. No tile removal required.
+              Fully licensed experts, 5-year warranty, same-day emergency service. No tile removal required.
             </p>
 
             <div className="bg-blue-50 border-l-4 border-primary p-3 sm:p-4 mb-6 sm:mb-8 rounded-r-lg">
               <div className="flex items-start space-x-2">
                 <Zap className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold text-blue-900 mb-1 sm:mb-2 text-sm sm:text-base">AS3740 Certified Waterproofing</h3>
-                  <p className="text-blue-800 text-sm sm:text-base">All our work meets Australian Standards for waterproofing wet areas in buildings, ensuring code compliance and long-term protection for your property.</p>
+                  <h3 className="font-bold text-blue-900 mb-1 sm:mb-2 text-sm sm:text-base">Licensed & Insured Waterproofing</h3>
+                  <p className="text-blue-800 text-sm sm:text-base">All our work meets Australian Standards for waterproofing wet areas, ensuring full compliance and long-term protection for your property.</p>
                 </div>
               </div>
             </div>

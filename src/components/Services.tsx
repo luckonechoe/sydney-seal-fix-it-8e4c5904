@@ -71,7 +71,7 @@ const Services = () => {
             Professional Waterproofing Services Sydney
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            AS3740 certified leak repair and restoration with revolutionary silver-ion nanoparticle technology 
+            Licensed leak repair and restoration with revolutionary silver-ion nanoparticle technology 
             providing lifetime antimicrobial protection and mould resistance
           </p>
         </header>
