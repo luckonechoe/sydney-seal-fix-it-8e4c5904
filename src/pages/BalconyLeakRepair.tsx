@@ -10,10 +10,17 @@ const BalconyLeakRepair = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Balcony Leak Repair Sydney - Expert Balcony Waterproofing & Restoration</title>
-        <meta name="description" content="Stop balcony leaks permanently! Professional balcony waterproofing and leak repair across Sydney. Advanced detection, lifetime warranty, same-day service. Call 0421 043 444 for free assessment." />
-        <meta name="keywords" content="balcony leak repair Sydney, balcony waterproofing Sydney, balcony restoration, deck waterproofing Sydney, outdoor leak repair, balcony membrane repair Sydney" />
-        <link rel="canonical" href="https://yourdomain.com/balcony-leak-repair" />
+        <title>Balcony Leak Repair Sydney | Waterproofing Specialists | 5-Year Warranty</title>
+        <meta name="description" content="Balcony leaking into the apartment below? Sydney's trusted balcony waterproofing specialists stop it permanently — advanced detection, UV-resistant membranes, 5-year written warranty. Free inspection today." />
+        <meta name="keywords" content="balcony leak repair Sydney, balcony waterproofing Sydney, balcony restoration, deck waterproofing Sydney, outdoor leak repair, balcony membrane repair, strata balcony repair Sydney, balcony leak Bondi, balcony waterproofing North Shore" />
+        <link rel="canonical" href="https://sydneyseal.com.au/balcony-leak-repair" />
+        <meta property="og:title" content="Balcony Leak Repair Sydney | Waterproofing Specialists" />
+        <meta property="og:description" content="Stop balcony leaks permanently. Advanced waterproofing membranes, UV-resistant, 5-year warranty. Serving all Sydney suburbs. Free assessment." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://sydneyseal.com.au/balcony-leak-repair" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Balcony Leak Repair Sydney | Sydney Seal" />
+        <meta name="twitter:description" content="Sydney's trusted balcony waterproofing. Stop leaks permanently with UV-resistant membranes and a 5-year written warranty." />
       </Helmet>
       
       <Header />

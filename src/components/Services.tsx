@@ -26,9 +26,9 @@ const Services = () => {
           Shower Leak<br />Repair
         </>
       ),
-      titleText: "Shower Leak Repair",
-      description: "Stop water damage with our non-invasive sealing technology. No tiles removed, guaranteed results",
-      features: ["No demolition", "Same day service", "Waterproof guarantee"],
+      titleText: "Shower Leak Repair Sydney",
+      description: "Stop a leaking shower from destroying your ceilings and subfloor. Our non-invasive repair seals the source without removing a single tile — same-day service across Eastern Suburbs, North Shore, Inner West & beyond.",
+      features: ["No tile demolition — saves 70% vs retile", "Silver-ion antimicrobial seal", "5-year written warranty"],
       link: "/shower-leak-repair"
     },
     {
@@ -38,17 +38,17 @@ const Services = () => {
           Balcony Leak<br />Repair
         </>
       ),
-      titleText: "Balcony Leak Repair",
-      description: "Complete balcony waterproofing solution with advanced leak repair using efflorecense free technology",
-      features: ["Weather resistant", "UV protection", "Balcony waterproofing"],
+      titleText: "Balcony Leak Repair Sydney",
+      description: "Balcony leaking into the apartment below? We stop water damage before it becomes structural. UV-resistant membranes with efflorescence-free technology — built for Sydney's harsh outdoor conditions.",
+      features: ["UV-resistant weather-proof membranes", "Drainage optimisation included", "Serving strata, builders & homeowners"],
       link: "/balcony-leak-repair"
     },
     {
       image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=400&fit=crop",
       title: "Commercial Waterproofing Services",
-      titleText: "Commercial Waterproofing Services",
-      description: "Reliable waterproofing for strata, real estate, property managers, and commercial organizations",
-      features: ["Reliable & professional", "Cost-effective solution", "Convenient repair time"],
+      titleText: "Commercial Waterproofing Sydney",
+      description: "Trusted by Sydney's top strata managers and property developers. Minimal disruption, full compliance, and 200+ successful commercial projects completed across multi-unit buildings and commercial properties.",
+      features: ["200+ commercial projects completed", "Priority scheduling for strata", "Detailed written reports & certification"],
       link: "/commercial-waterproofing"
     }
   ];

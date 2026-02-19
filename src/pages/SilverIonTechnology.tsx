@@ -49,7 +49,10 @@ const SilverIonTechnology = () => {
         <title>Antimicrobial Waterproofing Sydney - Advanced Mould-Resistant Protection</title>
         <meta name="description" content="Revolutionary antimicrobial waterproofing technology for Sydney homes and businesses. Lifetime mould-resistant protection for bathrooms, kitchens & wet areas. 99.9% bacteria elimination. Free quote." />
         <meta name="keywords" content="antimicrobial waterproofing Sydney, mould-resistant grout Sydney, antibacterial sealing, bathroom antimicrobial protection, kitchen waterproofing Sydney, mould prevention Sydney" />
-        <link rel="canonical" href="https://yourdomain.com/antimicrobial-technology" />
+        <link rel="canonical" href="https://sydneyseal.com.au/antimicrobial-technology" />
+        <meta property="og:title" content="Antimicrobial Waterproofing Sydney | Silver-Ion Technology" />
+        <meta property="og:description" content="Revolutionary silver-ion antimicrobial waterproofing for Sydney homes. Lifetime mould and bacteria protection. 99.9% effective. Learn more." />
+        <meta property="og:url" content="https://sydneyseal.com.au/antimicrobial-technology" />
       </Helmet>
       
       <Header />

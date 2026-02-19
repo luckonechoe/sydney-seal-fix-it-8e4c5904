@@ -13,7 +13,10 @@ const ShowerReTile = () => {
         <title>Shower Re-Tile Sydney - Permanent Shower Rip-Out & Reconstruction | Sydney Seal</title>
         <meta name="description" content="Stop shower leaks permanently with our full rip-out and re-tile service in Sydney. Complete demolition, compliant waterproofing, epoxy grout finish. 2-day job, 5-year warranty. Call 0421 043 444" />
         <meta name="keywords" content="shower re-tile Sydney, shower rip-out Sydney, shower reconstruction, shower waterproofing membrane, epoxy grout shower, permanent shower repair Sydney, shower floor replacement Sydney" />
-        <link rel="canonical" href="https://yourdomain.com/shower-re-tile" />
+        <link rel="canonical" href="https://sydneyseal.com.au/shower-re-tile" />
+        <meta property="og:title" content="Shower Re-Tile Sydney | Permanent Reconstruction | Sydney Seal" />
+        <meta property="og:description" content="Full shower rip-out and re-tile in Sydney. Complete waterproofing membrane, epoxy grout finish, 5-year warranty. Permanent fix for chronic leaks." />
+        <meta property="og:url" content="https://sydneyseal.com.au/shower-re-tile" />
       </Helmet>
       
       <Header />

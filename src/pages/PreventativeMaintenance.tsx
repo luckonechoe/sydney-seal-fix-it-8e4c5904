@@ -14,7 +14,10 @@ const PreventativeMaintenance = () => {
         <title>Preventative Leak Maintenance Sydney - Stop Leaks Before They Start</title>
         <meta name="description" content="Proactive waterproofing maintenance for Sydney properties. Prevent costly leak damage with regular inspections and antimicrobial treatments. Save up to 70% on repairs. Call 0421 043 444" />
         <meta name="keywords" content="preventative maintenance Sydney, leak prevention Sydney, waterproofing maintenance, proactive leak repair Sydney, building maintenance Sydney, grout maintenance Sydney" />
-        <link rel="canonical" href="https://yourdomain.com/preventative-maintenance" />
+        <link rel="canonical" href="https://sydneyseal.com.au/preventative-maintenance" />
+        <meta property="og:title" content="Preventative Leak Maintenance Sydney | Sydney Sealed" />
+        <meta property="og:description" content="Stop leaks before they start. Regular waterproofing inspections and antimicrobial treatments. Save up to 70% on future repairs. Sydney-wide service." />
+        <meta property="og:url" content="https://sydneyseal.com.au/preventative-maintenance" />
       </Helmet>
       
       <Header />

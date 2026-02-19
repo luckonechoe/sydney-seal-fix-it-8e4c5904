@@ -72,29 +72,31 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Sydney Seal | Shower Leak Repair & Waterproofing Experts Sydney | 5-Year Warranty</title>
-        <meta name="description" content="Sydney's #1 waterproofing specialists. Expert shower leak repair without tile removal, balcony waterproofing & bathroom restoration. Fully licensed professionals with 5-year warranty. Same-day emergency service across Eastern Suburbs, North Shore, Inner West, Parramatta & all Sydney suburbs. Silver-ion antimicrobial technology. Call 0421 043 444 for free assessment." />
-        <meta name="keywords" content="shower leak repair Sydney, waterproofing Sydney, balcony leak repair, bathroom waterproofing, grout sealing Sydney, waterproof shower without removing tiles, leak repair Eastern Suburbs, waterproofing North Shore Sydney, bathroom restoration Inner West, licensed waterproofing experts, antimicrobial grout sealing, mould resistant bathroom Sydney, emergency leak repair Sydney, commercial waterproofing Sydney, strata waterproofing services" />
+        <title>Shower Leak Repair Sydney | No Tile Removal | 5-Year Warranty | Sydney Sealed</title>
+        <meta name="description" content="Shower leaking through the ceiling? Sydney's #1 rated repair specialists fix it permanently — no tile removal, same-day service, silver-ion antimicrobial waterproofing, 5-year written warranty. Serving Eastern Suburbs, North Shore, Inner West, Parramatta & all Sydney. Call 0421 043 444." />
+        <meta name="keywords" content="shower leak repair Sydney, waterproofing Sydney, balcony leak repair, bathroom waterproofing, grout sealing Sydney, waterproof shower without removing tiles, leak repair Eastern Suburbs, waterproofing North Shore Sydney, bathroom restoration Inner West, licensed waterproofing experts, antimicrobial grout sealing, mould resistant bathroom Sydney, emergency leak repair Sydney, commercial waterproofing Sydney, strata waterproofing services, shower leak repair Bondi, waterproofing Chatswood, shower repair Parramatta, balcony waterproofing Manly" />
         <link rel="canonical" href="https://sydneyseal.com.au/" />
         
         {/* E-E-A-T Enhanced Meta */}
-        <meta name="author" content="Sydney Seal - Licensed Waterproofing Professionals" />
-        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="author" content="Sydney Sealed — Licensed Waterproofing Specialists NSW" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         
         {/* Local SEO */}
         <meta name="geo.region" content="AU-NSW" />
-        <meta name="geo.placename" content="Sydney" />
+        <meta name="geo.placename" content="Sydney, New South Wales, Australia" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Sydney Seal | Expert Shower Leak Repair & Waterproofing Sydney" />
-        <meta property="og:description" content="Sydney's trusted waterproofing specialists. Shower leak repair, balcony waterproofing & bathroom restoration. Fully licensed, 5-year warranty." />
+        <meta property="og:title" content="Shower Leak Repair Sydney | No Tile Removal | Sydney Sealed" />
+        <meta property="og:description" content="Sydney's #1 rated waterproofing specialists. Shower leak repair without tile removal, balcony waterproofing & bathroom restoration. NSW licensed, 5-year written warranty, same-day emergency service." />
         <meta property="og:type" content="business.business" />
         <meta property="og:locale" content="en_AU" />
+        <meta property="og:url" content="https://sydneyseal.com.au/" />
+        <meta property="og:site_name" content="Sydney Sealed Waterproofing" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Sydney Seal | Waterproofing Experts Sydney" />
-        <meta name="twitter:description" content="Expert shower leak repair & waterproofing across Sydney. Fully licensed, 5-year warranty." />
+        <meta name="twitter:title" content="Shower Leak Repair Sydney | Sydney Sealed Waterproofing" />
+        <meta name="twitter:description" content="Sydney's #1 rated shower leak repair. No tile removal, same-day service, 5-year written warranty. Serving all Sydney suburbs." />
       </Helmet>
       
       {/* JSON-LD Structured Data */}

@@ -58,7 +58,10 @@ const CompleteReconstruction = () => {
           content="Complete tile reconstruction Sydney with double-layer waterproofing protection. Full substrate rebuild, professional waterproofing membrane, and premium epoxy grout finish. 5-year warranty." 
         />
         <meta name="keywords" content="complete tile reconstruction Sydney, double-layer waterproofing, tile reconstruction waterproofing Sydney, substrate waterproofing, epoxy grout Sydney" />
-        <link rel="canonical" href="https://sydneysealed.com.au/complete-reconstruction" />
+        <link rel="canonical" href="https://sydneyseal.com.au/complete-reconstruction" />
+        <meta property="og:title" content="Complete Tile Reconstruction Sydney | Double-Layer Waterproofing" />
+        <meta property="og:description" content="Full tile reconstruction with double-layer waterproofing. Substrate rebuild, professional membrane, epoxy grout. 5-year warranty. Sydney-wide service." />
+        <meta property="og:url" content="https://sydneyseal.com.au/complete-reconstruction" />
       </Helmet>
       
       <Header />
