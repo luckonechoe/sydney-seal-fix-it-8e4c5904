@@ -91,9 +91,13 @@ const Testimonials = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Customer Reviews | Sydney Sealed Testimonials</title>
-        <meta name="description" content="Read what our customers say about Sydney Sealed's waterproofing services. Over 1000+ 5-star reviews from satisfied Sydney homeowners." />
-        <link rel="canonical" href="https://yourdomain.com/testimonials" />
+        <title>Customer Reviews & Testimonials | 4.9★ Rated | Sydney Sealed Waterproofing</title>
+        <meta name="description" content="Read 1,000+ verified reviews from Sydney homeowners who trust Sydney Sealed for shower leak repair and waterproofing. 4.9 stars average. See why we're Sydney's #1 rated waterproofers." />
+        <meta name="keywords" content="Sydney Sealed reviews, waterproofing reviews Sydney, shower leak repair testimonials, 5 star waterproofing Sydney, customer reviews waterproofing" />
+        <link rel="canonical" href="https://sydneyseal.com.au/testimonials" />
+        <meta property="og:title" content="Customer Reviews | 4.9★ Rated Sydney Waterproofing" />
+        <meta property="og:description" content="1,000+ verified reviews from satisfied Sydney homeowners. See why Sydney Sealed is the #1 rated waterproofing specialist." />
+        <meta property="og:url" content="https://sydneyseal.com.au/testimonials" />
       </Helmet>
       
       <Header />
@@ -133,7 +137,7 @@ const Testimonials = () => {
       </section>
 
       {/* Testimonials Grid */}
-      <section className="py-16 lg:py-24 bg-background">
+      <section className="py-16 lg:py-24 bg-background" itemScope itemType="https://schema.org/ItemList">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
@@ -141,30 +145,37 @@ const Testimonials = () => {
                 key={index} 
                 className="bg-muted/30 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-fade-in relative"
                 style={{ animationDelay: `${index * 0.05}s` }}
+                itemScope
+                itemType="https://schema.org/Review"
+                itemProp="itemListElement"
               >
                 <Quote className="absolute top-4 right-4 w-8 h-8 text-primary/20" />
                 
-                <div className="flex gap-1 mb-4">
+                <div className="flex gap-1 mb-4" itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
+                  <meta itemProp="ratingValue" content={String(testimonial.rating)} />
+                  <meta itemProp="bestRating" content="5" />
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
                 
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed" itemProp="reviewBody">
                   "{testimonial.review}"
                 </p>
                 
                 <div className="border-t border-border pt-4">
-                  <div className="font-semibold text-foreground">{testimonial.name}</div>
+                  <div className="font-semibold text-foreground" itemProp="author" itemScope itemType="https://schema.org/Person">
+                    <span itemProp="name">{testimonial.name}</span>
+                  </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mt-1">
                     <MapPin className="w-3 h-3" />
-                    {testimonial.location}
+                    <span itemProp="locationCreated">{testimonial.location}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-primary mt-2">
                     <CheckCircle className="w-3 h-3" />
-                    {testimonial.service}
+                    <span itemProp="name">{testimonial.service}</span>
                   </div>
-                  <div className="text-xs text-muted-foreground mt-2">{testimonial.date}</div>
+                  <div className="text-xs text-muted-foreground mt-2" itemProp="datePublished">{testimonial.date}</div>
                 </div>
               </div>
             ))}

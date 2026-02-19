@@ -139,10 +139,11 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
     ],
     "founder": {
       "@type": "Person",
-      "name": "Sydney Sealed Team"
+      "name": "Sydney Sealed Waterproofing Team",
+      "jobTitle": "Licensed Waterproofer NSW"
     },
     "foundingDate": "2015",
-    "slogan": "Sydney's Trusted Waterproofing Experts",
+    "slogan": "Sydney's #1 Rated Waterproofing Specialists",
     "knowsAbout": [
       "Waterproofing",
       "Shower Leak Repair",
@@ -150,19 +151,19 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
       "Bathroom Restoration",
       "Grout Sealing",
       "Antimicrobial Treatment",
-      "Australian Standards Compliance",
-      "Silver-Ion Technology"
+      "Silver-Ion Technology",
+      "Non-Invasive Leak Repair"
     ],
     "hasCredential": [
       {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "license",
-        "name": "Licensed Waterproofer NSW"
+        "name": "Licensed Waterproofer NSW — Lic. 482739W"
       },
       {
         "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "certification",
-        "name": "Australian Standards Certified Waterproofer"
+        "credentialCategory": "insurance",
+        "name": "$20M Public Liability Insurance"
       }
     ]
   };
@@ -197,7 +198,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
     }
   } : null;
 
-  // FAQ Schema for common questions (helps with AI overviews)
+  // FAQ Schema for common questions (helps with AI overviews and People Also Ask)
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -207,7 +208,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
         "name": "How much does shower leak repair cost in Sydney?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Professional shower leak repair in Sydney typically starts from $749 for minor repairs. The final cost depends on the severity of the leak and the size of the shower area. Sydney Seal provides free assessments and transparent pricing with no hidden fees. Our non-invasive repair method often costs 70% less than full tile replacement."
+          "text": "Professional shower leak repair in Sydney starts from $749 for minor repairs using non-invasive methods. The final cost depends on the severity of the leak and size of the shower. Sydney Sealed provides free on-site assessments with transparent written quotes. Our non-invasive repair method typically costs 70% less than full tile replacement."
         }
       },
       {
@@ -215,7 +216,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
         "name": "Can you fix a shower leak without removing tiles?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Sydney Sealed specialises in non-invasive shower leak repair that doesn't require tile removal. Our advanced sealing technology penetrates existing grout and surfaces to create a waterproof barrier. This method is faster, less disruptive, and more cost-effective than traditional tile replacement, with results backed by our 5-year warranty."
+          "text": "Yes — Sydney Sealed specialises in non-invasive shower leak repair that doesn't require tile removal. Our advanced sealing technology penetrates existing grout and surfaces to create a waterproof barrier from within. This method is faster, cleaner, and far less expensive than traditional tile replacement, with a 5-year written warranty included."
         }
       },
       {
@@ -223,7 +224,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
         "name": "How long does waterproofing repair take?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Most shower and bathroom leak repairs are completed in a single day. Sydney Sealed offers same-day service for urgent repairs. The waterproofing cures within 24-48 hours, and your shower can typically be used again the following day. Larger projects like balcony waterproofing may take 2-3 days depending on size and condition."
+          "text": "Most shower and bathroom leak repairs are completed in a single day. Sydney Sealed offers same-day service for urgent repairs. The waterproofing cures within 24–48 hours and your shower can typically be used again the next day. Larger balcony waterproofing projects may take 2–3 days."
         }
       },
       {
@@ -231,7 +232,7 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
         "name": "What areas in Sydney do you service?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sydney Sealed services all of Greater Sydney including Eastern Suburbs, North Shore, Inner West, Northern Beaches, Hills District, Sutherland Shire, Western Sydney, Parramatta, Blacktown, Penrith, Liverpool, Campbelltown, and surrounding areas. We offer same-day emergency service across all Sydney suburbs."
+          "text": "Sydney Sealed services all of Greater Sydney including Eastern Suburbs (Bondi, Randwick, Paddington), North Shore (Chatswood, Mosman, Neutral Bay), Inner West (Newtown, Marrickville), Northern Beaches (Manly, Dee Why), Hills District, Sutherland Shire, Western Sydney (Parramatta, Blacktown, Penrith, Liverpool), Campbelltown and all surrounding suburbs."
         }
       },
       {
@@ -239,15 +240,31 @@ const SEOStructuredData = ({ page = 'home', serviceName, serviceDescription }: S
         "name": "What warranty do you offer on waterproofing work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sydney Sealed provides a comprehensive 5-year warranty on all waterproofing repairs and restoration work. All our work meets Australian Standards for waterproofing wet areas, performed by fully licensed professionals. We also offer annual maintenance programs to ensure long-lasting protection for your investment."
+          "text": "Sydney Sealed provides a 5-year written warranty on all waterproofing repairs, covering both materials and workmanship. This is a formal written guarantee — not just a verbal promise. All work is carried out by fully licensed NSW waterproofers (Lic. 482739W), backed by $20M public liability insurance."
         }
       },
       {
         "@type": "Question",
-        "name": "What is silver-ion antimicrobial technology?",
+        "name": "What is silver-ion antimicrobial waterproofing?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Silver-ion antimicrobial technology uses embedded silver nanoparticles that provide continuous protection against mould, mildew, and bacteria. Sydney Sealed applies this technology during waterproofing and regrouting to create surfaces that resist microbial growth permanently. This is especially beneficial for wet areas prone to mould in Sydney's humid climate."
+          "text": "Silver-ion antimicrobial technology embeds silver nanoparticles into waterproofing grout and sealants, providing continuous protection against mould, mildew, and bacteria. Unlike surface treatments that wear off, silver-ion protection is built into the material permanently. It's clinically proven to eliminate 99.9% of harmful microorganisms and is especially effective in Sydney's humid climate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I know if my balcony is leaking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Key signs of a balcony leak include: water stains on the ceiling of the room below, efflorescence (white salt deposits) on the slab edge, standing water after rain, cracked or hollow tiles, rust stains from rebar, and mould on adjacent walls. If you notice any of these in Sydney, contact Sydney Sealed for a free inspection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Sydney Sealed licensed and insured?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Sydney Sealed holds NSW Waterproofing Licence 482739W and carries $20M public liability insurance. All work is completed by licensed professionals and meets Australian Standards for waterproofing of wet areas in residential and commercial buildings."
         }
       }
     ]

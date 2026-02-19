@@ -14,7 +14,10 @@ const CommercialWaterproofing = () => {
         <title>Commercial Waterproofing Sydney - Strata & Property Management Services</title>
         <meta name="description" content="Expert commercial waterproofing for Sydney strata and property managers. Multi-unit buildings, shopping centers, offices. 5-year warranty, minimal disruption. Free quote - call 0421 043 444" />
         <meta name="keywords" content="commercial waterproofing Sydney, strata waterproofing Sydney, property management waterproofing, multi-unit building repairs Sydney, commercial leak repair Sydney, building maintenance Sydney" />
-        <link rel="canonical" href="https://yourdomain.com/commercial-waterproofing" />
+        <link rel="canonical" href="https://sydneyseal.com.au/commercial-waterproofing" />
+        <meta property="og:title" content="Commercial Waterproofing Sydney | Strata & Property Managers" />
+        <meta property="og:description" content="Trusted commercial and strata waterproofing across Sydney. 200+ successful projects, 5-year warranty, minimal disruption. Free commercial quote." />
+        <meta property="og:url" content="https://sydneyseal.com.au/commercial-waterproofing" />
       </Helmet>
       
       <Header />

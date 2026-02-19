@@ -8,6 +8,36 @@ import { Link } from 'react-router-dom';
 const Blog = () => {
   const blogPosts = [
     {
+      id: 'shower-leak-repair-bondi',
+      title: "Shower Leak Repair in Bondi: What Eastern Suburbs Homeowners Need to Know",
+      excerpt: "Living in Bondi, Coogee, or Randwick? Older apartment blocks in Sydney's Eastern Suburbs have a specific set of waterproofing vulnerabilities — here's exactly what to look for and how to fix it fast.",
+      category: "Local Guide",
+      date: "February 12, 2025",
+      readTime: "6 min read",
+      image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&h=500&fit=crop",
+      featured: true
+    },
+    {
+      id: 'waterproofing-cost-sydney-2025',
+      title: "How Much Does Waterproofing Cost in Sydney in 2025?",
+      excerpt: "Shower leak repair from $749. Balcony waterproofing from $1,649. Full re-tile from $3,200. A real, transparent breakdown of waterproofing costs across Sydney — no hidden fees, no guesswork.",
+      category: "Pricing Guide",
+      date: "January 28, 2025",
+      readTime: "7 min read",
+      image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&h=500&fit=crop",
+      featured: true
+    },
+    {
+      id: 'mould-bathroom-waterproofing',
+      title: "Mould in Your Bathroom? It's Not a Cleaning Problem — It's a Waterproofing Problem",
+      excerpt: "If black mould keeps coming back no matter how many times you clean it, the issue is hidden moisture inside your walls. Here's what's actually happening and how silver-ion antimicrobial waterproofing fixes it permanently.",
+      category: "Health & Safety",
+      date: "January 10, 2025",
+      readTime: "5 min read",
+      image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&h=500&fit=crop",
+      featured: false
+    },
+    {
       id: 'signs-shower-leak',
       title: "7 Warning Signs Your Shower Has a Hidden Leak",
       excerpt: "Learn to spot the early indicators of a shower leak before it causes expensive structural damage to your Sydney home.",
@@ -15,12 +45,12 @@ const Blog = () => {
       date: "December 15, 2024",
       readTime: "5 min read",
       image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&h=500&fit=crop",
-      featured: true
+      featured: false
     },
     {
       id: 'antimicrobial-grout-benefits',
       title: "Why Antimicrobial Grout is Worth the Investment",
-      excerpt: "Discover how antimicrobial grout technology prevents mould growth and keeps your bathroom healthier for years.",
+      excerpt: "Discover how silver-ion antimicrobial grout technology permanently prevents mould growth and keeps your bathroom healthier for years.",
       category: "Technology",
       date: "December 10, 2024",
       readTime: "4 min read",
@@ -30,17 +60,17 @@ const Blog = () => {
     {
       id: 'balcony-waterproofing-guide',
       title: "The Complete Guide to Balcony Waterproofing in Sydney",
-      excerpt: "Everything Sydney homeowners need to know about protecting their balconies from water damage.",
+      excerpt: "Everything Sydney homeowners and strata managers need to know about protecting balconies from water damage, structural decay, and costly repairs.",
       category: "Guides",
       date: "December 5, 2024",
       readTime: "8 min read",
       image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=500&fit=crop",
-      featured: true
+      featured: false
     },
     {
       id: 'bathroom-renovation-mistakes',
       title: "5 Costly Bathroom Renovation Mistakes to Avoid",
-      excerpt: "Don't let these common errors turn your dream bathroom into a waterproofing nightmare.",
+      excerpt: "Don't let these common errors turn your dream bathroom into a waterproofing nightmare. Sydney's licensed experts share the most avoidable mistakes.",
       category: "Advice",
       date: "November 28, 2024",
       readTime: "6 min read",
@@ -50,7 +80,7 @@ const Blog = () => {
     {
       id: 'waterproofing-membrane-explained',
       title: "Waterproofing Membranes Explained: What's Under Your Tiles?",
-      excerpt: "A simple guide to understanding the crucial waterproofing layer that protects your home.",
+      excerpt: "A simple guide to understanding the crucial waterproofing layer that protects your home from hidden water damage.",
       category: "Education",
       date: "November 20, 2024",
       readTime: "5 min read",
@@ -60,7 +90,7 @@ const Blog = () => {
     {
       id: 'seasonal-maintenance-tips',
       title: "Seasonal Bathroom Maintenance: A Sydney Homeowner's Checklist",
-      excerpt: "Keep your wet areas in top condition year-round with these simple maintenance tasks.",
+      excerpt: "Keep your wet areas in top condition year-round with these simple maintenance tasks recommended by Sydney's waterproofing professionals.",
       category: "Maintenance",
       date: "November 15, 2024",
       readTime: "4 min read",
@@ -69,16 +99,20 @@ const Blog = () => {
     }
   ];
 
-  const categories = ["All", "Leak Detection", "Technology", "Guides", "Advice", "Education", "Maintenance"];
+  const categories = ["All", "Local Guide", "Pricing Guide", "Health & Safety", "Leak Detection", "Technology", "Guides", "Advice", "Education", "Maintenance"];
   const featuredPosts = blogPosts.filter(post => post.featured);
   const regularPosts = blogPosts.filter(post => !post.featured);
 
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Blog | Waterproofing Tips & Guides - Sydney Sealed</title>
-        <meta name="description" content="Expert waterproofing tips, guides, and advice from Sydney Sealed. Learn about leak detection, bathroom maintenance, and waterproofing best practices." />
-        <link rel="canonical" href="https://yourdomain.com/blog" />
+        <title>Waterproofing Blog & Expert Guides | Shower Leaks, Costs & Tips | Sydney Sealed</title>
+        <meta name="description" content="Expert waterproofing guides from Sydney's licensed professionals. Learn shower leak warning signs, balcony waterproofing costs, mould prevention, and suburb-specific tips. Updated 2025." />
+        <meta name="keywords" content="waterproofing blog Sydney, shower leak tips, waterproofing cost guide, bathroom leak advice, balcony waterproofing guide, mould prevention bathroom, leaking shower Sydney advice" />
+        <link rel="canonical" href="https://sydneyseal.com.au/blog" />
+        <meta property="og:title" content="Waterproofing Blog | Expert Tips & Guides | Sydney Sealed" />
+        <meta property="og:description" content="Expert waterproofing guides from Sydney's licensed professionals. Shower leak signs, costs, and suburb-specific advice." />
+        <meta property="og:url" content="https://sydneyseal.com.au/blog" />
       </Helmet>
       
       <Header />

@@ -13,7 +13,10 @@ const BathroomKitchenRestoration = () => {
         <title>Bathroom & Kitchen Restoration Sydney - Tile, Grout & Waterproofing Experts</title>
         <meta name="description" content="Complete bathroom and kitchen restoration services in Sydney. Tile restoration, antimicrobial grout renewal, waterproofing & mould treatment. 5-year warranty. Free consultation - call 0421 043 444" />
         <meta name="keywords" content="bathroom restoration Sydney, kitchen restoration Sydney, tile restoration, grout renewal Sydney, waterproofing Sydney, antimicrobial bathroom treatment, kitchen splashback repair Sydney" />
-        <link rel="canonical" href="https://yourdomain.com/bathroom-kitchen-restoration" />
+        <link rel="canonical" href="https://sydneyseal.com.au/bathroom-kitchen-restoration" />
+        <meta property="og:title" content="Bathroom & Kitchen Restoration Sydney | Sydney Sealed" />
+        <meta property="og:description" content="Complete bathroom and kitchen restoration. Antimicrobial tile and grout renewal, waterproofing, mould treatment. 5-year warranty. Free consultation." />
+        <meta property="og:url" content="https://sydneyseal.com.au/bathroom-kitchen-restoration" />
       </Helmet>
       
       <Header />

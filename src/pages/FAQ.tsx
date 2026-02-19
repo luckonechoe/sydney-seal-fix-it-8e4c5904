@@ -97,9 +97,13 @@ const FAQ = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>FAQ | Common Questions About Waterproofing - Sydney Seal</title>
-        <meta name="description" content="Find answers to frequently asked questions about shower leak repair, bathroom waterproofing, pricing, and services. Sydney Seal - your trusted waterproofing experts." />
-        <link rel="canonical" href="https://yourdomain.com/faq" />
+        <title>Waterproofing FAQs Sydney | Costs, Process & Warranty | Sydney Seal</title>
+        <meta name="description" content="Get answers to the most common questions about shower leak repair, balcony waterproofing, costs (from $749), timelines, and our 5-year warranty. Sydney Seal — fully licensed professionals." />
+        <meta name="keywords" content="waterproofing FAQ Sydney, shower leak repair cost Sydney, how long does waterproofing take, waterproofing warranty Sydney, leaking shower questions, balcony waterproofing cost" />
+        <link rel="canonical" href="https://sydneyseal.com.au/faq" />
+        <meta property="og:title" content="Waterproofing FAQs Sydney | Sydney Seal" />
+        <meta property="og:description" content="Answers to the most common waterproofing questions — costs, timelines, warranties, and more. Sydney's trusted experts." />
+        <meta property="og:url" content="https://sydneyseal.com.au/faq" />
       </Helmet>
       
       <Header />

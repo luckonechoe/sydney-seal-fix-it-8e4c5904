@@ -13,7 +13,10 @@ const BalconyReTile = () => {
         <title>Balcony Re-Tile Sydney - Full Strip-Out & Structural Waterproofing | Sydney Seal</title>
         <meta name="description" content="Protect your balcony from structural damage with our full strip-out and re-tile service in Sydney. Slab inspection, falls correction, external-grade waterproofing. 5-year warranty. Call 0421 043 444" />
         <meta name="keywords" content="balcony re-tile Sydney, balcony rip-out Sydney, balcony waterproofing membrane, concrete spalling repair, balcony structural repair Sydney, external waterproofing Sydney" />
-        <link rel="canonical" href="https://yourdomain.com/balcony-re-tile" />
+        <link rel="canonical" href="https://sydneyseal.com.au/balcony-re-tile" />
+        <meta property="og:title" content="Balcony Re-Tile Sydney | Full Strip-Out & Waterproofing" />
+        <meta property="og:description" content="Protect your balcony from structural damage. Full strip-out, slab inspection, compliant waterproofing, and new tiling. 5-year warranty. Sydney-wide." />
+        <meta property="og:url" content="https://sydneyseal.com.au/balcony-re-tile" />
       </Helmet>
       
       <Header />

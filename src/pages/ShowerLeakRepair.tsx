@@ -10,10 +10,17 @@ const ShowerLeakRepair = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Shower Leak Repair Sydney - Expert Leaking Shower Repairs | Sydney Seal</title>
-        <meta name="description" content="Stop shower leaks fast! Professional shower leak detection and repair in Sydney. Advanced antimicrobial waterproofing, 5-year warranty. Same-day emergency service available. Call 0421 043 444" />
-        <meta name="keywords" content="shower leak repair Sydney, leaking shower repair, shower waterproofing Sydney, bathroom leak detection, shower grout repair Sydney, antimicrobial waterproofing, emergency shower repairs Sydney" />
-        <link rel="canonical" href="https://yourdomain.com/shower-leak-repair" />
+        <title>Shower Leak Repair Sydney | No Tile Removal | 5-Year Warranty | Sydney Seal</title>
+        <meta name="description" content="Is your shower leaking through the ceiling? Sydney's #1 rated shower leak repair specialists fix it permanently — no tile removal, same-day service, 5-year written warranty. Call 0421 043 444 for a free assessment." />
+        <meta name="keywords" content="shower leak repair Sydney, leaking shower repair, shower waterproofing Sydney, bathroom leak detection, shower grout repair Sydney, antimicrobial waterproofing, emergency shower repairs Sydney, shower leak Bondi, shower leak repair Eastern Suburbs, leaking shower North Shore" />
+        <link rel="canonical" href="https://sydneyseal.com.au/shower-leak-repair" />
+        <meta property="og:title" content="Shower Leak Repair Sydney | No Tile Removal | Sydney Seal" />
+        <meta property="og:description" content="Stop a leaking shower permanently. No tile removal, same-day service across Sydney, 5-year written warranty. Free assessment — call 0421 043 444." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://sydneyseal.com.au/shower-leak-repair" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Shower Leak Repair Sydney | Sydney Seal" />
+        <meta name="twitter:description" content="Sydney's rated shower leak repair. No tile removal, same-day service, 5-year warranty." />
       </Helmet>
       
       <Header />
