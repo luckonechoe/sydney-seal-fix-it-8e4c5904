@@ -9,42 +9,42 @@ const ServiceAreas = () => {
   const regions = [
     {
       name: "Eastern Suburbs",
-      suburbs: ["Shower leak repair Bondi", "Waterproofing Randwick", "Bathroom repair Woollahra", "Leak repair Double Bay", "Shower sealing Paddington", "Waterproofing Maroubra"],
+      suburbs: ["Bondi", "Randwick", "Woollahra", "Double Bay", "Paddington", "Maroubra"],
       description: "Expert shower leak repair and bathroom waterproofing across the Eastern Suburbs — Bondi, Randwick, Woollahra & beyond"
     },
     {
       name: "North Shore",
-      suburbs: ["Shower repair Chatswood", "Waterproofing North Sydney", "Leak repair Willoughby", "Bathroom sealing Lane Cove", "Waterproofing Mosman", "Shower repair Neutral Bay"],
+      suburbs: ["Chatswood", "North Sydney", "Willoughby", "Lane Cove", "Mosman", "Neutral Bay"],
       description: "Professional shower and balcony waterproofing across Sydney's North Shore"
     },
     {
       name: "Inner West",
-      suburbs: ["Bathroom repair Marrickville", "Waterproofing Newtown", "Shower leak Leichhardt", "Grout repair Burwood", "Waterproofing Ashfield", "Leak repair Canterbury"],
+      suburbs: ["Marrickville", "Newtown", "Leichhardt", "Burwood", "Ashfield", "Canterbury"],
       description: "Bathroom restoration and shower leak repair specialists in the Inner West"
     },
     {
       name: "Northern Beaches",
-      suburbs: ["Balcony repair Manly", "Waterproofing Dee Why", "Shower leak Brookvale", "Bathroom repair Mona Vale", "Waterproofing Warriewood", "Leak repair Narrabeen"],
+      suburbs: ["Manly", "Dee Why", "Brookvale", "Mona Vale", "Warriewood", "Narrabeen"],
       description: "Balcony and shower waterproofing experts for Northern Beaches properties"
     },
     {
       name: "Hills District",
-      suburbs: ["Shower repair Castle Hill", "Waterproofing Baulkham Hills", "Leak repair Rouse Hill", "Bathroom sealing Kellyville", "Shower repair North Rocks", "Waterproofing Bella Vista"],
+      suburbs: ["Castle Hill", "Baulkham Hills", "Rouse Hill", "Kellyville", "North Rocks", "Bella Vista"],
       description: "Trusted shower and bathroom waterproofing services throughout the Hills District"
     },
     {
       name: "Western Sydney",
-      suburbs: ["Shower repair Parramatta", "Waterproofing Blacktown", "Leak repair Penrith", "Bathroom repair Liverpool", "Shower sealing Fairfield", "Waterproofing Bankstown"],
+      suburbs: ["Parramatta", "Blacktown", "Penrith", "Liverpool", "Fairfield", "Bankstown"],
       description: "Comprehensive shower leak repair and waterproofing solutions across Western Sydney"
     },
     {
       name: "Sutherland Shire",
-      suburbs: ["Bathroom repair Sutherland", "Waterproofing Cronulla", "Shower leak Miranda", "Leak repair Caringbah", "Waterproofing Engadine", "Bathroom sealing Gymea"],
+      suburbs: ["Sutherland", "Cronulla", "Miranda", "Caringbah", "Engadine", "Gymea"],
       description: "Expert shower and balcony waterproofing in the Sutherland Shire"
     },
     {
       name: "South West Sydney",
-      suburbs: ["Shower repair Campbelltown", "Waterproofing Liverpool", "Bathroom repair Narellan", "Leak repair Camden", "Shower sealing Hoxton Park", "Waterproofing Ingleburn"],
+      suburbs: ["Campbelltown", "Liverpool", "Narellan", "Camden", "Hoxton Park", "Ingleburn"],
       description: "Professional waterproofing services for South West Sydney homes"
     }
   ];
